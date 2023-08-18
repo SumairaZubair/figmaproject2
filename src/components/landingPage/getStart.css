@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    /* height: 100vh; */
+    /* height: auto; */
+    /* background: url('../../Assest/bgwhite.png'); */
+    background-color: #F37357; /* Background color */
+  background-image: url('../../Assest/bgwhite.png'); /* Background picture */
+  background-size: cover;
+  background-position: center;
+  /* text-align: center; */
+}
+
+
+.nav{
+    margin: 20px;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+/* background-color: #F37357; */
+}
+.cottage{
+    width: 90%;
+}
+.signin{
+    width: 200px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 2px solid #192E46;
+background: #FFF;
+color: #192E46;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; /* 28.35px */
+letter-spacing: 0.18px;
+}
+.content{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid purple; */
+}
+.dot{
+    width: 180px;
+    height: 400px;
+    margin-bottom: 8%;
+    /* border: 2px solid red; */
+    /* background-image: url('../../Assest/dot.png'); */
+}
+.dots{
+    width: 180px;
+    height: 400px;
+}
+.takeMeal{
+    width: 500px;
+    height: 477px;
+    margin-bottom: 10%
+}
+.mealText{
+    color: #192E46;
+text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
+font-family: Poppins;
+font-size: 54px;
+font-style: normal;
+font-weight: 900;
+text-align: start;
+line-height: 78px;
+padding-bottom: 30px;
+}
+.mealText span{
+    color: #192E46;
+font-family: Poppins;
+font-size: 54px;
+font-style: normal;
+font-weight: 800;
+line-height: 78px;
+text-decoration-line: underline;
+}
+.mealPara{
+    color: #4C6889;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px;
+text-align: start;
+padding-bottom: 50px;
+}
+.mealPara span{
+    color: #F37357;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.started{
+    margin-left: 0px;
+    /* margin-left: 10px; */
+     width: 210px;
+ height: 62px;
+ flex-shrink: 0;
+ border-radius: 4px;
+ background: #F37357;
+ color: white;
+ border: none;
+}
+ .more{
+    width: 210px;
+ height: 62px;
+    border-radius: 4px;
+    border: 1px solid #192E46;
+    background-color: white;
+    color: #192E46;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; /* 28.35px */
+letter-spacing: 0.18px;
+margin-left: 30px;
+}
+.overView{
+    width: 800px;
+    /* height: auto; */
+    margin-top: 30px;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pinkDots{
+    width: 30px;
+    height: 200px;
+    /* border: 2px solid #4C6889; */
+}
+.homepage{
+    width: 90%;
+    /* height: 100%; */
+}
+/* .idealNav{
+    border: 2px solid brown;
+    width: 100%;
+    height: 46.175px;
+flex-shrink: 0;
+}
+.idealNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.location{
+    width: 110.306px;
+height: 22.6px;
+flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.052px;
+border: 0.513px solid #D9DEE4;
+background: #FFF;
+}
+.west{
+    color: #4C6889;
+font-family: Poppins;
+font-size: 10px;
+padding: 3px;
+font-style: normal;
+margin-top: 5px;
+font-weight: 500;
+line-height: 361.5%;
+}
+.women{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.hi{
+    color: #B6C5D6;
+text-align: right;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Poppins;
+padding: 10px;
+font-size: 11px;
+font-style: normal;
+font-weight: 600;
+line-height: 13.085px; 
+letter-spacing: 0.092px;
+}
+.idealtext{
+    width: 130.315px;
+height: 25.653px;
+padding-top: 3px;
+text-align: center;
+
+flex-shrink: 0;
+color: #192E46;
+font-family: Poppins;
+font-size: 17.392px;
+font-style: normal;
+font-weight: 600;
+line-height: 19.496px; 
+letter-spacing: -0.154px;
+}
+.rice{
+    width: 100%;
+    height: 200px;
+    background-color: #F37357;
+    position: relative;
+}
+.mealimg{
+    width: 100%;
+}
+.upperDiv{
+    width: 302.7px;
+height: 99.019px;
+flex-shrink: 0;
+background: #F9FAFB;
+position: absolute;
+top: 80px;
+left: 50%;
+/* }  */
+
+
+@media (max-width: 768px) {
+    .main{
+      width: 100%;
+      /* height: auto; */
+    }
+    .nav {
+        margin: 2px;
+        justify-content: space-between;
+    }
+
+    .cottage{
+        margin: 2px;
+        width: 60%;
+    }
+    .signin {
+        font-size: 15px;
+        margin: 2px;
+        width: 100px;
+        height: 40px;
+    }
+    .content{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        /* border: 2px solid purple; */
+    }
+.dot{
+       display: none;
+    }
+    .takeMeal {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 1%;
+    }
+
+    .mealText {
+        font-size: 40px; 
+        line-height: 50px; 
+        text-align: center;
+    }
+
+    .mealText span {
+        font-size: 45px; 
+        line-height: 55px; 
+    }
+
+    .mealPara {
+        font-size: 20px; 
+        line-height: 25px; 
+        text-align: center;
+    }
+
+    .mealPara span {
+        font-size: 22px; 
+        line-height: 27px;
+    }
+    .pinkDots{
+        margin-bottom: 30%;
+    }
+
+    .button {
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+
+    .started,
+    .more {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+    .overView{
+        width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 30% */
+    }
+    .pink{
+        width: 20px;
+        height: 200px;
+           }
+
+}
