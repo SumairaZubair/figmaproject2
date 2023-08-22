@@ -1,0 +1,43 @@
+.nav{
+    margin: 20px;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+/* background-color: #F37357; */
+}
+.cottage{
+    width: 90%;
+}
+.signin{
+    width: 200px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 2px solid #192E46;
+background: #FFF;
+color: #192E46;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; /* 28.35px */
+letter-spacing: 0.18px;
+}
+@media (max-width:768px){
+    .nav {
+        margin: 2px;
+        justify-content: space-between;
+    }
+
+    .cottage{
+        margin: 2px;
+        width: 60%;
+    }
+    .signin {
+        font-size: 15px;
+        margin: 2px;
+        width: 100px;
+        height: 40px;
+    }
+}

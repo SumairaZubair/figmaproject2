@@ -1,24 +1,18 @@
+// import Modal from 'antd/es/modal/Modal';
+import NavBar from '../navBar/NavBar';
+import Track from './Track';
+import MealManu from './MeaLMenu';
+import MealItem from './MealItem';
+import MealPlan from './MealPlan';
+import Order from './Order';
 import './getStart.css'
-import { useNavigate } from 'react-router-dom';
-
+// import { useNavigate } from 'react-router-dom';
 const GetStart = () => {
-    const navigate = useNavigate();
-
-    const handleForm=()=>{
-       navigate('/signUp')
-    }
+   
     return (
         <div>
             <div className='main'>
-                <div className="nav">
-                    <div>
-
-                        <img className='cottage' src={require('../../Assest/LOGO.png')} alt='cottage' />
-                    </div>
-                    <div>
-                        <button className='signin' onClick={handleForm}>SIGN IN</button>
-                    </div>
-                </div>
+               <NavBar/>
                 <div>
                     <div className='content'>
                         <div className='dot'>
@@ -82,6 +76,11 @@ const GetStart = () => {
                             </div>
                         </div>
                     </div>
+                   <MealManu/>
+                   <MealPlan/>  
+                   <MealItem/>
+                   <Order/>
+                   <Track/>
                 </div>
            
        

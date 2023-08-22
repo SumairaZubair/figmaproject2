@@ -5,50 +5,18 @@
 }
 .main{
     width: 100%;
-    /* height: 100vh; */
-    /* height: auto; */
-    /* background: url('../../Assest/bgwhite.png'); */
-    background-color: #F37357; /* Background color */
-  background-image: url('../../Assest/bgwhite.png'); /* Background picture */
+    background-color: #F37357; 
+  background-image: url('../../Assest/bgwhite.png'); 
   background-size: cover;
   background-position: center;
-  /* text-align: center; */
 }
 
-
-.nav{
-    margin: 20px;
-    display: flex;
-align-items: center;
-justify-content: space-between;
-/* background-color: #F37357; */
-}
-.cottage{
-    width: 90%;
-}
-.signin{
-    width: 200px;
-height: 60px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 2px solid #192E46;
-background: #FFF;
-color: #192E46;
-text-align: center;
-font-family: Poppins;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 157.5%; /* 28.35px */
-letter-spacing: 0.18px;
-}
 .content{
     margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 2px solid purple; */
 }
 .dot{
     width: 180px;
@@ -103,6 +71,7 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: 29px;
+cursor: pointer;
 }
 .button{
     display: flex;
@@ -146,6 +115,7 @@ margin-left: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .pinkDots{
     width: 30px;
@@ -252,21 +222,7 @@ left: 50%;
       width: 100%;
       /* height: auto; */
     }
-    .nav {
-        margin: 2px;
-        justify-content: space-between;
-    }
-
-    .cottage{
-        margin: 2px;
-        width: 60%;
-    }
-    .signin {
-        font-size: 15px;
-        margin: 2px;
-        width: 100px;
-        height: 40px;
-    }
+    
     .content{
         margin-top: 50px;
         width: 100%;
