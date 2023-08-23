@@ -25,12 +25,23 @@
     width: 1320px;
     height: 528px;
     flex-shrink: 0;
-    /* background-image: url('../../Assest/trackimg.png'); */
+    background-image: url('../../Assest/trackimg.png');
     /* background-size: cover; */
     margin-bottom: 20px;
     margin-left: 30px;
     /* background-position: center; */
     /* background-color: aqua; */
+}
+.trackimg{
+    
+    display: none;
+    width: 900px;
+    height: 300px;
+    flex-shrink: 0;
+    background-image: url('../../Assest/trackMedia1.png');
+    background-size: cover;
+    margin-bottom: 2px;
+    margin-left: 2px;
 }
 .trackHead h1{
     color: #192E46;
@@ -60,6 +71,23 @@ font-style: normal;
 font-weight: 600;
 line-height: 29px;
 }
+.trackBtn{
+    width: 255px;
+height: 62px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #F37357;
+border: none;
+color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; /* 28.35px */
+margin: 20px;
+letter-spacing: 0.18px;
+}
 
 @media (max-width: 768px) {
     .mainDiv {
@@ -71,15 +99,24 @@ line-height: 29px;
     }    
 
     .trackImg{
+        display: none;
         width: 100%;
         height: 300px;
         flex-shrink: 0;
-        /* background-image: url('../../Assest/trackimg.png'); */
+        background-image: url('../../Assest/trackMedia1.png');
         /* background-size: cover; */
         margin-bottom: 2px;
         margin-left: 2px;
         /* background-position: center; */
         /* background-color: aqua; */
+    }
+    .trackimg{
+        width: 100%;
+        display: block;
+    }
+    .trackBtn{
+        /* margin: 10px; */
+        width: 90%;
     }
     .trackHead h1 {
         font-size: 36px;
