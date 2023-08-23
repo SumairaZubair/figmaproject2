@@ -21,14 +21,14 @@
     align-items: center;
     justify-content: center;
     width: 600px;
-height: 700px;
+height: 600px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .formm{
     width: 460px;
-height: 610px;
+height: 500px;
 flex-shrink: 0;
 /* background-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
@@ -219,7 +219,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 157.5%; /* 18.9px */
 letter-spacing: 0.12px;
-/* margin-right: 30px; */
+margin-right: 30px;
 }
 .twitter{
     width: 180px;
@@ -241,8 +241,8 @@ letter-spacing: 0.12px;
 
 @media (max-width: 768px) {
     .signUpContentt {
-        padding-top: 15%;
-        padding-bottom: 15%;
+        padding-top: 5%;
+        padding-bottom: 3%;
     }
 
     .form-Div,
@@ -286,12 +286,17 @@ letter-spacing: 0.12px;
     margin-top:20px;
     text-align:center;
     line-height:normal;}
-
+.signLogoo{
+    width: 50%;
+}
     .facebookk,
     .twitter {
         width: 100%; 
         margin-left: 0;
         margin-bottom: 10px; 
+    }
+    .forgot{
+        margin-right: 1px;
     }
 }
 

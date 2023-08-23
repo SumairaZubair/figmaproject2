@@ -1,140 +1,32 @@
-// import '../Signup/signUp.css'
-// import { useState } from 'react';
-// import React, { useState } from 'react';
-// import { Button, Modal } from 'antd';
-// import { useNavigate } from 'react-router-dom';
-// import showModal from '../../components/Model/CustomModal'
-// const SignUp = () => {
-//     const Navigate = useNavigate()
-//     const [firstName, setFirstName] = useState('');
-//     const [lastName, setLastName] = useState('');
-//     const [email, setEmail] = useState('');
-//     const [password, setPassword] = useState('');
-//     const [address, setAddress] = useState('');
-
-
-
-//     const Modal = () => {
-//         const [isModalOpen, setIsModalOpen] = useState(false);
-//         const showModal = () => {
-//           setIsModalOpen(true);
-//         };
-//         const handleOk = () => {
-//           setIsModalOpen(false);
-//         };
-//         const handleCancel = () => {
-//           setIsModalOpen(false);
-//         };
-//         return (
-//           <>
-            
-//             <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-//               <p>Some contents...</p>
-//               <p>Some contents...</p>
-//               <p>Some contents...</p>
-//             </Modal>
-//           </>
-//         );
-//       };
-
-
-
-//     const handleLogin=()=>{
-//         Navigate('/login')
-//     }
-
-//     const handleSubmit = (e) => {
-        
-//         e.preventDefault();
-//         console.log('Form submitted:', { firstName, lastName, email, password });
-            
-//     };
-  
-
-//     return (
-//         <div>
-//             <div className='signUpContent'>
-//                 <div className='signUpForm'>
-//                     <img className='signLogo' src={require('../../Assest/LOGO.png')} />
-//                     <div className='formDiv'>
-//                         <div className='form'>
-//                             <div className='sign/loginBtns'>
-//                                 <button className='signIn' onClick={handleLogin}>Sign In</button>
-//                                 <button className='signUps'>Sign Up</button>
-//                             </div>
-//                             <div className='feild'>
-//                                 <form onSubmit={handleSubmit}>
-//                                     <input
-//                                         className='name'
-//                                         type="text"
-//                                         placeholder="First Name"
-//                                         value={firstName}
-//                                         onChange={(e) => setFirstName(e.target.value)}
-//                                     />
-//                                     <input
-//                                         className='name'
-//                                         type="text"
-//                                         placeholder="Last Name"
-//                                         value={lastName}
-//                                         onChange={(e) => setLastName(e.target.value)}
-//                                     />
-//                                     <input
-//                                     className='email'
-//                                         type="email"
-//                                         placeholder="Email"
-//                                         value={email}
-//                                         onChange={(e) => setEmail(e.target.value)}
-//                                     />
-//                                      <input
-//                                     className='address'
-//                                         type="address"
-//                                         placeholder="address"
-//                                         value={address}
-//                                         onChange={(e) => setAddress(e.target.value)}
-//                                     />
-//                                     <input
-//                                     className='password'
-//                                         type="password"
-//                                         placeholder="Password"
-//                                         value={password}
-//                                         onChange={(e) => setPassword(e.target.value)}
-//                                     />
-//                                     <button className='signbutton' type="submit">Sign Up Now</button>
-//                                 </form>
-//                                 <p className='terms'>By continuing, I agree to Cottage’s <span onClick={showModal}>Terms & Conditions.</span></p>
-//                             <div className='connect'>
-//                                 <p className='line'></p>
-//                                 <p>Or Connect With</p>
-//                                 <p className='line'></p>
-//                             </div>
-//                             <div className='fb-tweet'>
-//                                 <button className='facebook'>Facebook</button>
-//                                 <button className='twiter'>Twitter</button>
-//                             </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-                
-//             </div>
-          
-//         </div>
-//     )
-// }
-// export default SignUp
 
 import '../Signup/signUp.css'
 import React, { useState } from 'react';
 import { Button, Modal as AntModal } from 'antd'; // Rename the Modal import to avoid conflicts
 import { useNavigate } from 'react-router-dom';
-
 const SignUp = () => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     const Navigate = useNavigate()
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [address, setAddress] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false); // Moved the modal state to the top level
 
     const showModal = () => {
@@ -195,18 +87,18 @@ const SignUp = () => {
                                     <input
                                         className='address'
                                         type="text"
-                                        placeholder="Address"
-                                        value={address}
-                                        onChange={(e) => setAddress(e.target.value)}
+                                        placeholder="password"
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
                                     />
                                     <input
                                         className='password'
                                         type="password"
-                                        placeholder="Password"
-                                        value={password}
-                                        onChange={(e) => setPassword(e.target.value)}
+                                        placeholder="Confirm password"
+                                        value={confirmPassword}
+                                        onChange={(e) => setConfirmPassword(e.target.value)}
                                     />
-                                    <button className='signbutton' type="submit">Sign Up Now</button>
+                                    <button className='signbutton' type="submit" onClick={()=>{Navigate('/verify')}}>Sign Up Now</button>
                                 </form>
                                 <p className='terms'>By continuing, I agree to Cottage’s <span onClick={showModal}>Terms & Conditions.</span></p>
                                 <div className='connect'>
@@ -227,7 +119,7 @@ const SignUp = () => {
             {/* Custom Modal */}
             <AntModal
                 title="Basic Modal"
-                visible={isModalOpen}
+                open={isModalOpen}
                 onOk={handleOk}
                 onCancel={handleCancel}
             >

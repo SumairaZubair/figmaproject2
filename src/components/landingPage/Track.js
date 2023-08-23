@@ -1,10 +1,10 @@
 import '../landingPage/track.css'
-import NavBar from '../navBar/NavBar'
+// import NavBar from '../navBar/NavBar'
 const Track = () => {
     return (
         <div>
             <div className="trackbg">
-                <NavBar />
+                {/* <NavBar /> */}
                 <div className='mainDiv'>
                     <div className='trackHead'>
                         <h1>Track your business<br/> performance</h1>

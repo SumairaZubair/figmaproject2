@@ -116,7 +116,7 @@ const navigate = useNavigate()
                                     />
                                     <button className='sign-button' type="submit">Sign Up Now</button>
                                 </form>
-                                <p className='forgot'>Forgot Password</p>
+                                <p className='forgot' onClick={()=>{navigate('/forget')}}>Forgot Password</p>
                             <div className='connected'>
                                 <p className='linee'></p>
                                 <p>Or Connect With</p>

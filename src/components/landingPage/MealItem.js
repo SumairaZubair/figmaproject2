@@ -1,10 +1,8 @@
 import '../landingPage/mealItem.css'
-import NavBar from '../navBar/NavBar'
 const MealItem =()=>{
     return(
         <div>
            <div className='mainn'>
-                <NavBar />
                 <div className='menu'>
                     <div className='menuItemImg'>
                         {/* <img src={require('../../Assest/menu.png')}/> */}

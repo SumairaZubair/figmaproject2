@@ -10,14 +10,14 @@
 width: 95%;
 height: 100vh;
 /* border: 2px solid red; */
-margin: 50px;
+margin: 100px;
 display: flex;
 align-items: center;
 justify-content: space-between;
 }
 .menuPlanImg{
     width: 630px;
-height: 728px;
+height: 650px;
 flex-shrink: 0;
 /* border: 2px solid pink; */
 background: #F6F8FA;
