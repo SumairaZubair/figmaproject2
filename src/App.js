@@ -17,9 +17,8 @@ function App() {
      
       <Router>
       <Routes>
-        {/* <Route path="/" element={<Slider/>} exact/> */}
-        <Route path="/" element={<SignUp />} exact/>
-        {/* <Route path="/" element={<SignUp />} exact/> */}
+        <Route path="/" element={<Slider/>} exact/>
+        <Route path="/signUp" element={<SignUp />} exact/>
         <Route path="/login" element={<Login />} exact/>
         <Route path="/verify" element={<Verified/>}exact/>
         <Route path="/forget" element={<ForegtPassword/>}exact/>
