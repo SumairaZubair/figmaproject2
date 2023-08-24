@@ -262,7 +262,7 @@ letter-spacing: 0.12px;
     letter-spacing: 0.28px;
     }
     .line{
-        width: 50px;
+        width: 40px;
     height: 1px;
     flex-shrink: 0;
     margin: 10px;
@@ -276,9 +276,10 @@ letter-spacing: 0.12px;
 
     .facebook,
     .twiter {
-        width: 100%; 
-        margin-left: 0;
-        margin-bottom: 10px; 
+        /* width: 100%;  */
+        width: 45%;
+        /* margin-left: 0;
+        margin-bottom: 10px;  */
     }
 }
 
