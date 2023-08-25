@@ -114,7 +114,7 @@ const navigate = useNavigate()
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                     />
-                                    <button className='sign-button' type="submit">Sign Up Now</button>
+                                    <button className='sign-button' type="submit" onClick={()=>{navigate('/proAcc')}}>Sign Up Now</button>
                                 </form>
                                 <p className='forgot' onClick={()=>{navigate('/forget')}}>Forgot Password</p>
                             <div className='connected'>
