@@ -8,7 +8,9 @@ import GetStart from './components/landingPage/GetStart';
 import Verified from './components/Signup/Verified';
 import Slider from './components/landingPage/Slider';
 import ForegtPassword from './components/login/ForgetPassword';
-import ProducerAccount from './components/producerProfile/ProducerAccount'
+// import ProducerAccount from './components/producerProfile/ProducerAccount'
+// import ProducerNavbar from './components/producerProfile/accountNavBar/ProducerNavbar';
+import ProducerAccount from './components/producerProfile/ProducerAccount';
 function App() {
   return (
     <div className="App">
@@ -17,12 +19,12 @@ function App() {
      
       <Router>
       <Routes>
-        <Route path="/" element={<Slider/>} exact/>
+        {/* <Route path="/" element={<Slider/>} exact/> */}
         <Route path="/signUp" element={<SignUp />} exact/>
         <Route path="/login" element={<Login />} exact/>
         <Route path="/verify" element={<Verified/>}exact/>
         <Route path="/forget" element={<ForegtPassword/>}exact/>
-        {/* <Route path="/" element={<ProducerAccount/>}exact/> */}
+        <Route path="/" element={<ProducerAccount/>}exact/>
 
 
         

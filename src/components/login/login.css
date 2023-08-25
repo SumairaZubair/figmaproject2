@@ -220,6 +220,7 @@ font-weight: 600;
 line-height: 157.5%; /* 18.9px */
 letter-spacing: 0.12px;
 margin-right: 30px;
+cursor: pointer;
 }
 .twitter{
     width: 180px;

@@ -1,0 +1,338 @@
+.pen-card{
+    margin-left: 95%;
+
+}
+.producer-profile-flex{
+    background-color: #f3f0f0;
+    /* padding: 20px; */
+ 
+}
+.pen-card title{
+    background-color: white
+}
+.right-card{
+    width: 80%;
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    background: transparent;
+    /* border: 2px solid blue; */
+
+}
+.cards-2{
+   margin-bottom:10px;
+    /* border: 2px solid red; */
+    background: #ffffff;
+    padding: 10px;
+}
+.pizzaCard{
+    border: none;
+    background: white;
+    /* padding: 1px; */
+    /* margin: 2px; */
+}
+.local{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: white; */
+    border: none;
+    padding: 10px;
+    margin: -5px;
+}
+.local span{
+    color: #192E46;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.44px;
+}
+ .local button{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+background: transparent;
+text-align: center;
+padding: 2px;
+border: 2px solid rgb(217, 214, 214);
+ }
+.side-card{
+    margin: auto;
+width: 80%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.profile-card{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #192E46;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.profile-card p{
+    color: #4C6889;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 4px;
+}
+.profile-card button{
+     border-radius: 2px;
+     color: #768CA5;
+     margin-top: 20px;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.7px;
+}
+.man{
+    margin: auto;
+    margin-left: 35%;
+    border-radius: 60px;
+}
+.part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/* margin-bottom: 20px; */
+}
+.active{
+    color: #192E46;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.18px;
+}
+.active span{
+    color: #FB775A;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.18px;
+}
+.btn-add{
+    margin: 10px;
+    width: 180px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FB775A;
+}
+.main-card{
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    flex-direction: column;
+}
+ .big-flex{
+    /* width:100%;S */
+    /* background-color: #4C6889; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+ }
+.dashBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.p{
+color: #768CA5;
+font-family: Poppins;
+font-size: 15px;
+padding-bottom: 3px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.91px;
+}
+.ant-card-type-inner .ant-card-head {
+    padding: 0 24px; 
+    background: transparent;
+}
+.pp{
+    color: #192E46;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.18px;
+padding-bottom: 5px;
+}
+.dashboardBtn{
+    width: 159px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #192E46;
+color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.14px; 
+}
+.ant-modal .ant-modal-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #ffffffcb;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: none;
+    pointer-events:transparent;
+    padding: 1px 24px;
+}
+.ant-card .ant-card-body {
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+@media (max-width:768px){
+    .side-card{
+        margin: auto;
+    width: 100%;
+    height: auto;
+ padding: 10px ;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-bottom: none;
+        border-radius: 2px;
+    }
+    .profile-card{
+        padding: 10px;
+        /* background-color: rgb(248, 248, 251); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #192E46;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+    .cards-2{
+        width: 100%;
+        padding: 1px;
+        /* border: 2px solid red; */
+        background: #ffffff;
+        margin-bottom: 20px;
+    }
+    .profile-card p{
+        color: #4C6889;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 4px;
+}
+.profile-card button{
+    font-size: 12px;
+}
+.part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.btn-add{
+    margin: 5px;
+    width: 100%;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FB775A;
+}
+.local{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+}
+.right-card{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    /* border: 2px solid blue; */
+    padding: 1px;
+    padding-bottom: 20px;
+
+}
+.main-card{
+    width: 50%;
+    display: block;
+    
+}
+ 
+.dashBtn{
+    display: block;
+    
+}
+.big-flex{
+    /* width:100%;S */
+    /* background-color: #4C6889; */
+    /* display: flex; */
+    align-items: center;
+    display: block;
+    justify-content: first baseline;
+    flex-direction: column;
+ }
+ .main-card{
+    display: block;
+    justify-content: flex-start;
+    flex-direction: column;
+ }
+ .dashBtn{
+    display: block;
+    justify-content: left;
+    flex-direction: column;
+ }
+ .local button {
+ width: 30px;
+ height: 30px;
+ margin-left: 5px;
+    flex-shrink: 0;
+    background: transparent;
+    text-align: center;
+    padding: 1px;
+    border: 2px solid rgb(217, 214, 214);
+}
+.man{
+    margin-left: 30%;
+}
+.dashboardBtn{
+    width: 100%;
+}
+}

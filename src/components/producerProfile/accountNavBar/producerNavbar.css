@@ -1,0 +1,30 @@
+.producerNav{
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.proImg{
+    width: 200px;
+}
+.producerNavText{
+    width: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarText{
+    color: #B6C5D6;
+text-align: right;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 25.5px; /* 141.667% */
+letter-spacing: 0.18px;
+}
