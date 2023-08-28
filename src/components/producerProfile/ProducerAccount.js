@@ -72,11 +72,19 @@ import { EditOutlined } from '@ant-design/icons';
 import { RightOutlined } from '@ant-design/icons'
 import '../../components/producerProfile/producerAcc.css'
 import ProducerNavbar from './accountNavBar/ProducerNavbar';
+import { InfoCircleOutlined } from '@ant-design/icons'
+import { Form, Input} from 'antd';
+
 // import { useState } from 'react';
 function ProducerAccount() {
-
+const [formModal , setFormModal] = useState(false)
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [closeMsgg, setCloseMsgg] = useState(false)
+  const [Message, setMessage] = useState('');
 
+
+
+  
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -86,6 +94,51 @@ function ProducerAccount() {
   };
 
 
+  const showFormModal = () => {
+    setFormModal(true);
+  };
+
+  const formCancel = () => {
+    setFormModal(false);
+  };
+
+  const [formData, setFormData] = useState({
+    fname: '',
+    lname: '',
+    number: '',
+    email: '',
+  });
+
+  // Handle input changes and update state
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle form submission
+  const handlesSubmit = (e) => {
+    e.preventDefault();
+    if (closeMsgg) {
+      setMessage('')
+  } else {
+      setMessage(`Lorem Ipsum is the standard filler text used in design throughout the world. It’s been the standards since the 1500’s and it’s time for an update..`);
+  }
+  setCloseMsgg(!closeMsgg)
+    
+    // Do something with the form data (e.g., submit to a server)
+    console.log('Form Data:', formData);
+
+    // Clear form fields by resetting the state
+    setFormData({
+      fname: '',
+      lname: '',
+      number: '',
+      email: '',
+    });
+  };
   return (
     <div>
       <ProducerNavbar/>
@@ -95,7 +148,7 @@ function ProducerAccount() {
             {/* Left Card */}
             <Col xs={24} sm={12} lg={8}>
               <Card
-                title={<EditOutlined className="pen-card" />}
+                title={<EditOutlined className="pen-card" onClick={showFormModal} />}
                 className="side-card"
                 type="inner"
               >
@@ -260,19 +313,83 @@ function ProducerAccount() {
         </div>
       </div>
       <Modal
-        
        open={isModalVisible}
+        // onOk={handleOk}
         onCancel={handleCancel}
         footer={null}
-        style={{ top: 0, height: '100vh', margin: 0 }}
-        width="100%"
-        bodyStyle={{ height: 'calc(100vh - 50px)', overflowY: 'auto' }}
-        maskClosable={false}
+        className="full-page-modal" // Add a class for styling
+        centered // Center the modal vertically
+        bodyStyle={{ background: 'white' }} // Set the background color to white
       >
-        {/* Content for the full-page modal goes here */}
-        <p>This is a full-page modal content.</p>
-        <p>You can add any content you want.</p>
+        <p>sgbujuhcnljdnsj</p>
+        <button>gyhsdihiushd</button>
       </Modal>
+      <>
+        <Modal open={formModal} onCancel={formCancel} footer={null} width='30%' style={{backgroundColor:"white", marginTop:'0px'}}>
+          <h1 className='edit'>Edit profile</h1>
+          <div className='profileDiv'>
+            <div className='profilePicture'>
+           <div className='pennIcon'> <EditOutlined /></div>
+            </div>
+          </div>
+          <form  className="my-form">
+     
+      <div className="form-row">
+        <div className="form-group">
+          <label>First Name:</label>
+          <input
+            type="text"
+            name="fname"
+            value={formData.fname}
+            onChange={handleInputChange}
+            className="input"
+          />
+        </div>
+        <div className="form-group">
+          <label>Last Name:</label>
+          <input
+            type="text"
+            name="lname"
+            value={formData.lname}
+            onChange={handleInputChange}
+            className="input"
+          />
+        </div>
+      </div>
+      <div className="form-row">
+        <div className="form-group">
+          <label>Phone Number:</label>
+          <input
+            type="text"
+            name="number"
+            value={formData.number}
+            onChange={handleInputChange}
+            className="input"
+          />
+        </div>
+        <div className="form-groups">
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="input"
+          />
+        </div>
+      </div>
+      <div className="form-rows">
+      </div>
+    </form>
+      <div className="btn-div">
+      <button type="submit" className="button" onClick={handlesSubmit}>Submit</button>
+        <p className='saveMsg'>{Message}</p>
+        <InfoCircleOutlined style={{marginLeft:'40%'}}/>
+        <span className='need'>Need help</span>
+      </div>
+        </Modal>
+      </>
+
     </div>
 
 
