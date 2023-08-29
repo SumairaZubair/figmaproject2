@@ -72,8 +72,8 @@ font-weight: 600;
 line-height: 29px;
 }
 .trackBtn{
-    width: 255px;
-height: 62px;
+    width: 200px;
+height: 60px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #F37357;
@@ -81,7 +81,7 @@ border: none;
 color: #FFF;
 text-align: center;
 /* font-family: Poppins; */
-font-size: 18px;
+font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: 157.5%; /* 28.35px */
@@ -97,7 +97,7 @@ letter-spacing: 0.18px;
     
     .trackHead {
         width: 80%;
-        margin-top: 40px;
+        margin-top: 70px;
     }    
 
     .trackImg{
@@ -118,6 +118,7 @@ letter-spacing: 0.18px;
     }
     .trackBtn{
         margin: 10px;
+        margin-bottom: 10px;
         width: 90%;
     }
     .trackHead h1 {
