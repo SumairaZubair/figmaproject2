@@ -6,8 +6,8 @@ const Order=()=>{
  
 <div className='mainn'>
                 <div className='menuPlan'>
-                <div className='dott'>
-                        <img className='dott' src={require('../../Assest/dot.png')}/>
+                <div className='dottO'>
+                        <img className='dottO' src={require('../../Assest/dot.png')}/>
                     </div>
                     <div className='menutext'>
                         <h1 className='menuHead'>Simplify your order management</h1>

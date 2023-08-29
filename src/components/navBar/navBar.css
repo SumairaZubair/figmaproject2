@@ -1,6 +1,6 @@
 .nav{
-    height: 10vh;
-    width: 99%;
+    height: 8vh;
+    width: 99.8%;
     z-index: 1;
     margin: 0px;
     display: flex;
@@ -8,13 +8,14 @@ align-items: center;
 justify-content: space-between;
 position: fixed;
 background-color: #ffffff;
+/* border: 2px solid red; */
 }
 .cottage{
-    width: 90%;
+    width: 80%;
 }
 .signin{
-    width: 200px;
-height: 60px;
+    width: 150px;
+height: 50px;
 flex-shrink: 0;
 border-radius: 4px;
 border: 2px solid #192E46;
@@ -22,7 +23,7 @@ background: #FFF;
 color: #192E46;
 text-align: center;
 font-family: Poppins;
-font-size: 18px;
+font-size: 17px;
 font-style: normal;
 font-weight: 600;
 line-height: 157.5%; /* 28.35px */

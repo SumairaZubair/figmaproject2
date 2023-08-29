@@ -47,25 +47,25 @@
     color: #192E46;
 text-align: center;
 text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
-font-family: Poppins;
-font-size: 49px;
+/* font-family: Poppins; */
+font-size: 40px;
 margin-bottom: 10px;
 font-style: normal;
 font-weight: 800;
-line-height: 58px;
+line-height: 50px;
 }
 .trackHead p{
     color: #4C6889;
 text-align: center;
-font-family: Poppins;
-font-size: 22px;
+/* font-family: Poppins; */
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
-line-height: 29px; 
+line-height: 25px; 
 }
 .trackHead span{
     color: #FB775A;
-font-family: Poppins;
+/* font-family: Poppins; */
 font-size: 22px;
 font-style: normal;
 font-weight: 600;
@@ -80,7 +80,7 @@ background: #F37357;
 border: none;
 color: #FFF;
 text-align: center;
-font-family: Poppins;
+/* font-family: Poppins; */
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -97,12 +97,13 @@ letter-spacing: 0.18px;
     
     .trackHead {
         width: 80%;
+        margin-top: 40px;
     }    
 
     .trackImg{
         display: none;
         width: 100%;
-        height: 300px;
+        height: 350px;
         flex-shrink: 0;
         background-image: url('../../Assest/trackMedia1.png');
         /* background-size: cover; */
@@ -116,21 +117,21 @@ letter-spacing: 0.18px;
         display: block;
     }
     .trackBtn{
-        /* margin: 10px; */
+        margin: 10px;
         width: 90%;
     }
     .trackHead h1 {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 30px;
+        line-height: 40px;
     }
     
     .trackHead p {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 25px;
     }
     
     .trackHead span {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 20px;
     }
 }

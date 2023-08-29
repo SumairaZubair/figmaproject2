@@ -22,37 +22,39 @@ body{
     align-items: center;
 }
 .dot{
-    width: 180px;
+    width: 200px;
     height: 400px;
     margin-bottom: 8%;
-    /* border: 2px solid red; */
+
     /* background-image: url('../../Assest/dot.png'); */
 }
 .dots{
-    width: 180px;
+    width: 200px;
     height: 400px;
 }
 .takeMeal{
-    width: 500px;
+    width: 450px;
     height: 477px;
-    margin-bottom: 10%
+    /* margin-top: 60px; */
+    margin-bottom: 10%;
+    /* border: 2px solid red; */
 }
 .mealText{
-    margin-top: 50px;
+    margin-top: 90px;
     color: #192E46;
 text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
-font-family: Poppins;
-font-size: 54px;
+/* font-family: Poppins; */
+font-size: 45px;
 font-style: normal;
 font-weight: 900;
 text-align: start;
-line-height: 78px;
+line-height: 60px;
 padding-bottom: 30px;
 }
 .mealText span{
     color: #192E46;
-font-family: Poppins;
-font-size: 54px;
+/* font-family: Poppins; */
+font-size: 50px;
 font-style: normal;
 font-weight: 800;
 line-height: 78px;
@@ -60,8 +62,8 @@ text-decoration-line: underline;
 }
 .mealPara{
     color: #4C6889;
-font-family: Poppins;
-font-size: 24px;
+/* font-family: Poppins; */
+font-size: 21px;
 font-style: normal;
 font-weight: 400;
 line-height: 29px;
@@ -70,14 +72,14 @@ padding-bottom: 50px;
 }
 .mealPara span{
     color: #F37357;
-font-family: Poppins;
-font-size: 24px;
+/* font-family: Poppins; */
+font-size: 21px;
 font-style: normal;
 font-weight: 600;
 line-height: 29px;
 cursor: pointer;
 }
-.button{
+.buttonn{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,8 +89,8 @@ cursor: pointer;
 .started{
     margin-left: 0px;
     /* margin-left: 10px; */
-     width: 210px;
- height: 62px;
+     width: 190px;
+ height: 60px;
  flex-shrink: 0;
  border-radius: 4px;
  background: #F37357;
@@ -96,8 +98,8 @@ cursor: pointer;
  border: none;
 }
  .more{
-    width: 210px;
- height: 62px;
+    width: 190px;
+ height: 60px;
     border-radius: 4px;
     border: 1px solid #192E46;
     background-color: white;
@@ -112,14 +114,14 @@ letter-spacing: 0.18px;
 margin-left: 30px;
 }
 .overView{
-    width: 800px;
-    /* height: auto; */
-    margin-top: 30px;
+    width: 700px;
+    height: 600px;
+    margin-top: 10px;
     /* border: 2px solid green; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .pinkDots{
     width: 30px;
@@ -127,8 +129,8 @@ margin-left: 30px;
     /* border: 2px solid #4C6889; */
 }
 .homepage{
-    width: 90%;
-    /* height: 100%; */
+    width: 100%;
+    height: 97%;
 }
 /* .idealNav{
     border: 2px solid brown;
@@ -228,7 +230,7 @@ left: 50%;
     }
     
     .content{
-        margin-top: 50px;
+        margin-top: 60px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -244,34 +246,38 @@ left: 50%;
         width: 100%; 
         height: auto; 
         margin-bottom: 1%;
+        /* border: 2px solid #F37357; */
     }
 
     .mealText {
-        font-size: 40px; 
-        line-height: 50px; 
+        margin-top: 2px;
+        font-size: 33px; 
+        line-height: 30px; 
         text-align: center;
+        margin-bottom: -6%;
     }
 
     .mealText span {
-        font-size: 45px; 
-        line-height: 55px; 
+        font-size: 30px; 
+        line-height: 40px; 
     }
 
     .mealPara {
-        font-size: 20px; 
-        line-height: 25px; 
+        font-size: 15px; 
+        line-height: 20px; 
         text-align: center;
+        padding-bottom: 10px;
     }
 
     .mealPara span {
-        font-size: 22px; 
-        line-height: 27px;
+        font-size: 19px; 
+        line-height: 20px;
     }
     .pinkDots{
         margin-bottom: 30%;
     }
 
-    .button {
+    .buttonn {
         flex-direction: column; 
         align-items: flex-start; 
         justify-content: flex-start;

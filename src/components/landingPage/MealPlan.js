@@ -5,8 +5,8 @@ const MealPlan =()=>{
 
 <div className='mainn'>
                 <div className='menuPlan'>
-                <div className='dott'>
-                        <img className='dott' src={require('../../Assest/dot.png')}/>
+                <div className='dottP'>
+                        <img className='dottP' src={require('../../Assest/dot.png')}/>
                     </div>
                     <div className='menutext'>
                         <h1 className='menuHead'>Meal plans are easy to manage</h1>

@@ -19,7 +19,7 @@ const GetStart = () =>{
                              to the <span>next level</span></p>
                             <p className='mealPara'><span>cottage</span>
                                 will help you reach more customers and simplify managing your site, your menus, and your orders, letting you focus on delivering great food.</p>
-                            <div className='button'>
+                            <div className='buttonn'>
                                 <button className='started'>GET STARTED</button>
                                 <button className='more'>LEARN MORE</button>
                             </div>
