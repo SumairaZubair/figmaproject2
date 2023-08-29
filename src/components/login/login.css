@@ -222,7 +222,7 @@ letter-spacing: 0.12px;
 margin-right: 30px;
 cursor: pointer;
 }
-.twitter{
+.twittter{
     width: 180px;
     height: 43px;
     flex-shrink: 0;
@@ -291,7 +291,7 @@ letter-spacing: 0.12px;
     width: 50%;
 }
     .facebookk,
-    .twitter {
+    .twittter {
         width: 100%; 
         margin-left: 0;
         margin-bottom: 10px; 

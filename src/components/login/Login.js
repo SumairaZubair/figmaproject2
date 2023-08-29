@@ -124,7 +124,7 @@ const navigate = useNavigate()
                             </div>
                             <div className='fb-tweeter'>
                                 <button className='facebookk'>Facebook</button>
-                                <button className='twitter'>Twitter</button>
+                                <button className='twittter'>Twitter</button>
                             </div>
                             </div>
                         </div>

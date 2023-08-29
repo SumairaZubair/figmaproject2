@@ -325,7 +325,7 @@ const [formModal , setFormModal] = useState(false)
         <button>gyhsdihiushd</button>
       </Modal>
       <>
-        <Modal open={formModal} onCancel={formCancel} footer={null} width='30%' style={{backgroundColor:"white", marginTop:'0px'}}>
+        <Modal open={formModal} onCancel={formCancel} footer={null}style={{backgroundColor:"white", marginTop:'0px'}}>
           <h1 className='edit'>Edit profile</h1>
           <div className='profileDiv'>
             <div className='profilePicture'>
@@ -336,7 +336,7 @@ const [formModal , setFormModal] = useState(false)
      
       <div className="form-row">
         <div className="form-group">
-          <label>First Name:</label>
+         <div> <label>First Name:</label></div>
           <input
             type="text"
             name="fname"
@@ -346,7 +346,7 @@ const [formModal , setFormModal] = useState(false)
           />
         </div>
         <div className="form-group">
-          <label>Last Name:</label>
+          <div><label>Last Name:</label></div>
           <input
             type="text"
             name="lname"
@@ -358,7 +358,7 @@ const [formModal , setFormModal] = useState(false)
       </div>
       <div className="form-row">
         <div className="form-group">
-          <label>Phone Number:</label>
+        <div>  <label>Phone Number:</label></div>
           <input
             type="text"
             name="number"
@@ -368,7 +368,7 @@ const [formModal , setFormModal] = useState(false)
           />
         </div>
         <div className="form-groups">
-          <label>Email:</label>
+        <div>  <label>Email:</label></div>
           <input
             type="email"
             name="email"
