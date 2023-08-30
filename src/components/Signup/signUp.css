@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 550px;
 height: 600px;
 flex-shrink: 0;
 background: #fff;
@@ -43,7 +43,6 @@ border: 1px solid #D4D7DD;
 background: #FAFAFA;
 color: #192E46;
 text-align:center;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -55,7 +54,6 @@ letter-spacing: -0.36px;
     height: 50px;  
     color: #192E46;
 text-align: center;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -79,7 +77,6 @@ background: #FFF;
 padding-left: 10px;
 color: #9AA6B4;
 text-align:start;
-font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -98,7 +95,6 @@ border-radius: 4px;
 border: 1px solid #FB775A;
 background: #FFF;
 text-align:start;
-font-family: Poppins;
 font-size: 14px;
 }
 .address{
@@ -112,7 +108,6 @@ border-radius: 4px;
 border: 1px solid #E0E4E9;
 background: #FFF;
 text-align:start;
-font-family: Poppins;
 font-size: 14px;
 }
 .signLogo{
@@ -129,7 +124,6 @@ border-radius: 4px;
 border: 1px solid #E0E4E9;
 background: #FFF;
 text-align:start;
-font-family: Poppins;
 font-size: 14px;
 }
 .signbutton{
@@ -142,12 +136,10 @@ border-radius: 4px;
 background: #FB775A;
 border: none;
 color: #FFF;
-font-family: Poppins;
 font-size: 14px;
 }
 .terms{
     color: #192E46;
-font-family: Poppins;
 font-size: 14px;
 margin: 4px;
 font-style: normal;
@@ -157,7 +149,6 @@ letter-spacing: 0.14px;
 }
 .terms span{
     color: #FB775A;
-font-family: Poppins;
 font-size: 14px;
 cursor: pointer;
 font-style: normal;
@@ -171,7 +162,6 @@ letter-spacing: 0.14px;
     justify-content: center;
     margin-top: 20px;
     color: #9AA6B4;
-font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -192,14 +182,13 @@ background: #E0E4E9;
     margin-top: 10px;
 }
 .facebook{
-    width: 160px;
+    width: 170px;
 height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #3B5998;
 border: none;
 color: #FFF;
-font-family: Poppins;
 font-size: 12px;
 font-style: normal;
 font-weight: 600;
@@ -207,7 +196,7 @@ line-height: normal;
 letter-spacing: 0.12px;
 }
 .twitter{
-    width: 160px;
+    width: 170px;
     height: 40px;
     flex-shrink: 0;
     margin-left: 20px;
@@ -215,7 +204,6 @@ letter-spacing: 0.12px;
 background: #00ACEE;
 border: none;
 color: #FFF;
-font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
@@ -232,21 +220,25 @@ letter-spacing: 0.12px;
 
     .formDiv,
     .form {
-        width: 90%; 
+        width: 100%; 
         height: auto; 
     }
 .signLogo{
     width: 40%;
 }
-    .signIn,
-    .signUps,
+.signIn,
+.signUps{
+    /* display: block; */
+    width: 100%;
+}
+    
     .name,
     .email,
     .address,
     .password,
     .signbutton,
     .terms {
-        width: 100%; 
+        width: 98%; 
     }
     .connect{
         display: flex;
@@ -254,8 +246,7 @@ letter-spacing: 0.12px;
         justify-content: center;
         margin-top: 20px;
         color: #9AA6B4;
-    font-family: Poppins;
-    font-size: 16px;
+        font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 361.5%; /* 50.61px */

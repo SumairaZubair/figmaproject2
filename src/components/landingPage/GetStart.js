@@ -16,7 +16,7 @@ const GetStart = () =>{
                         </div>
                         <div className='takeMeal'>
                             <p className='mealText'>Take your meal  <br/>prep company
-                             to the <span>next level</span></p>
+                             to the <span className='nextLevel'>next level</span></p>
                             <p className='mealPara'><span>cottage</span>
                                 will help you reach more customers and simplify managing your site, your menus, and your orders, letting you focus on delivering great food.</p>
                             <div className='buttonn'>
@@ -30,7 +30,7 @@ const GetStart = () =>{
                                   
                                         <img className='homepage' src={require('../../Assest/homepagew.png')}/>
                                         <div className='pinkDots'>
-                                    <img className='pink' src={require('../../Assest/pinkdots.png')}/>
+                                    {/* <img className='pink' src={require('../../Assest/pinkdots.png')}/> */}
                                 </div>
                                 </div>
                               

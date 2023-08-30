@@ -1,0 +1,193 @@
+.quesBg{
+    width: 100%;
+    height: 100vh;
+    /* height: 60vh; */
+    background-color: #F37357;
+    background-image: url('../../../Assest/askQuestionBg.png');
+    background-size: cover;
+    background-position: center;
+}
+.askbg{
+    width: 100%;
+    height: 80vh;
+    background-color: #F37357;
+}
+.quesMain{
+    width: 98%;
+    height: auto;
+    /* margin: 70px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.askQuesDv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+height: 480px;
+flex-shrink: 0;
+background: #fff;
+box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
+}
+.askQuesForm{
+    width: 460px;
+height: 450px;
+flex-shrink: 0;
+/* backgro    und-color: #D4D7DD; */
+border: 1px solid #D4D7DD;
+box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
+}
+.haveQues{
+    margin-top: 4%;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #192E46;
+text-align: center;
+text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
+/* font-family: Poppins; */
+/* font-size: 54px; */
+font-style: normal;
+font-weight: 700;
+line-height: 68px;
+}
+.askField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fname{
+    width: 200px;
+    margin: 4px;
+    margin-top: 20px;
+    padding-left: 10px;
+height: 46px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #E0E4E9;
+background: #FFF;
+text-align:start;
+/* font-family: Poppins; */
+font-size: 14px;
+}
+.lname{
+    width: 200px;
+    margin: 4px;
+    margin-top: 20px;
+    padding-left: 10px;
+height: 46px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #E0E4E9;
+background: #FFF;
+text-align:start;
+/* font-family: Poppins; */
+font-size: 14px;
+}
+.Email{
+    width: 400px;
+    margin: 4px;
+    margin-top: 20px;
+    padding-left: 10px;
+height: 46px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #FB775A;
+background: #FFF;
+text-align:start;
+font-family: Poppins;
+font-size: 14px;
+}
+.input-textarea{
+    
+        width: 390px;
+        margin: 4px;
+        margin-top: 20px;
+        padding-left: 10px;
+    /* height: 46px; */
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #E0E4E9;
+    background: #FFF;
+    text-align:start;
+    /* font-family: Poppins; */
+    font-size: 14px;
+}
+.askSecondDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.submitbutton{
+    width: 400px;
+    margin: 4px;
+    margin-top: 20px;
+height: 46px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FB775A;
+border: none;
+color: #FFF;
+/* font-family: Poppins; */
+font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .askQuesDv {
+        width: 90%; /* Adjust the width for smaller screens */
+        height: auto; /* Adjust the height as needed */
+    }
+
+    .askQuesForm {
+        width: 100%; /* Make the form take full width on small screens */
+        /* You can adjust other properties as needed */
+    }
+    .askField{
+        display: block;
+    }
+.input-textarea{
+    width: 97%; 
+    height: 100px;
+}
+    .fname,
+    .lname,
+    .Email,
+    /* .input-textarea, */
+    .submitbutton {
+        width: 97%; /* Make these elements take full width on small screens */
+        /* You can adjust other properties as needed */
+    }
+    .haveQues{
+        margin-top: 8%;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+}
+
+/* Media query for screens larger than 768px (adjust values as needed) */
+@media (min-width: 769px) {
+    .askQuesDv {
+        width: 550px; /* Reset the width for larger screens */
+        height: 480px; /* Reset the height as needed */
+    }
+
+    .askQuesForm {
+        width: 440px; /* Reset the width as needed */
+        /* You can adjust other properties as needed */
+    }
+    .askField{
+        display: block;
+    }
+
+    .fname,
+    .lname,
+    .Email,
+    .input-textarea,
+    .submitbutton {
+        /* Reset the width and other properties for larger screens */
+        /* You can adjust other properties as needed */
+    }
+}

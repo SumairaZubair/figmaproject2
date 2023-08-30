@@ -27,10 +27,10 @@ background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .formV{
-    width: 460px;
+width: 460px;
 height: 450px;
 flex-shrink: 0;
-/* background-color: #D4D7DD; */
+/* backgro    und-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }

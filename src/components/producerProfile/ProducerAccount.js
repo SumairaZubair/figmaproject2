@@ -167,7 +167,7 @@ const [formModal , setFormModal] = useState(false)
               <Card
                 title={
                   <div className='part'>
-                    <span className='active'>You have <span>2</span> active businesses</span>
+                    <span className='active'>You have <span className='active-span'>2</span> active businesses</span>
                     <Button type="primary" className="btn-add" onClick={showModal}>+ Add Business</Button>
                   </div>
                 }

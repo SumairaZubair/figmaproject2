@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: auto; */
 }
 body{
     overflow: auto;
@@ -15,11 +16,13 @@ body{
 }
 
 .content{
-    margin-top: 100px;
+    margin-top: 0px;
+    /* padding-top: 50px; */
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    /* border: 2px solid #F37357; */
 }
 .dot{
     width: 200px;
@@ -34,13 +37,13 @@ body{
 }
 .takeMeal{
     width: 450px;
-    height: 477px;
-    /* margin-top: 60px; */
+    height: 450px;
+    margin-top: 100px;
     margin-bottom: 10%;
     /* border: 2px solid red; */
 }
 .mealText{
-    margin-top: 90px;
+    margin-top: 10px;
     color: #192E46;
 text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
 /* font-family: Poppins; */
@@ -51,7 +54,7 @@ text-align: start;
 line-height: 60px;
 padding-bottom: 30px;
 }
-.mealText span{
+.nextLevel{
     color: #192E46;
 /* font-family: Poppins; */
 font-size: 50px;
@@ -114,7 +117,7 @@ letter-spacing: 0.18px;
 margin-left: 30px;
 }
 .overView{
-    width: 700px;
+    width: 650px;
     height: 600px;
     margin-top: 10px;
     /* border: 2px solid green; */
@@ -230,7 +233,7 @@ left: 50%;
     }
     
     .content{
-        margin-top: 60px;
+        margin-top: 0px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -246,11 +249,12 @@ left: 50%;
         width: 100%; 
         height: auto; 
         margin-bottom: 1%;
+        margin-top: 50px;
         /* border: 2px solid #F37357; */
     }
 
     .mealText {
-        margin-top: 2px;
+        margin-top: 0px;
         font-size: 36px; 
         line-height: 35px; 
         text-align: center;

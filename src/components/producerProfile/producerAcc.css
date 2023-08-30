@@ -122,7 +122,7 @@ font-weight: 600;
 line-height: normal;
 letter-spacing: -0.18px;
 }
-.active span{
+.active-span{
     color: #FB775A;
 font-family: Poppins;
 font-size: 18px;
@@ -286,6 +286,7 @@ letter-spacing: 0.18px;
   }
   
   .form-group {
+    width: auto;
     margin-bottom: 10px;
   }
   .form-groups {
@@ -296,7 +297,8 @@ letter-spacing: 0.18px;
   }
   
   .input {
-    width: 180px;
+    /* width: 180px; */
+    width: 100%;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
@@ -551,7 +553,7 @@ background: #FB775A;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     margin: 0 auto;
     /* padding: 10px; */
@@ -564,9 +566,7 @@ background: #FB775A;
     flex-direction: column;
     margin-bottom: 10px;
   }
-  .input {
-    width: 100%; /* Make the input fields full width on smaller screens */
-  }
+  
 
   .button {
     width: 100%; /* Make the buttons full width on smaller screens */
@@ -583,9 +583,15 @@ background: #FB775A;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
 }
+.form-row {
+    flex-direction: column; /* Stack inputs vertically on small screens */
+}
 .saveMsg{
     width: 100%;
     margin: auto;
     margin-top: 10px
+}
+.form-group {
+width: 100%;
 }
 }
