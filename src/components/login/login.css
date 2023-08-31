@@ -241,7 +241,7 @@ letter-spacing: 0.12px;
     .signInn,
     .signUpss{
         /* display: block; */
-        width: 100%;
+        width: 50%;
     }
     
     .name,

@@ -229,7 +229,7 @@ letter-spacing: 0.12px;
 .signIn,
 .signUps{
     /* display: block; */
-    width: 100%;
+    width: 50%;
 }
     
     .name,

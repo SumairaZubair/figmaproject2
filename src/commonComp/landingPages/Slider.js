@@ -94,17 +94,19 @@
 
 
 import React from "react";
-// import ReactDOM from "react-dom";
-import GetStart from "./GetStart"
-import Track from './Track';
-import MealManu from './MeaLMenu';
-import MealItem from './MealItem';
-import MealPlan from './MealPlan';
-import Order from './Order';
-import Questions from "./questions/Questions"
-import NavBar from "../navBar/NavBar";
+// // import ReactDOM from "react-dom";
+// import GetStart from "../../components/landingPage/GetStart"
+// import Track from '../../components/landingPage/Track';
+// import MealManu from '../../components/landingPage/MeaLMenu';
+// import MealItem from '../../components/landingPage/MealItem';
+// import MealPlan from '../../components/landingPage/MealPlan';
+// import Order from '../../components/landingPage/Order';
+// import Questions from "../../components/landingPage/questions/Questions"
+// import NavBar from "../navBar/NavBar";
 import ReactFullpage from "@fullpage/react-fullpage";
-import '../landingPage/style.css'
+import '../landingPages/style.css'
+import HomePage1 from "../../commonComp/landingPages/HomePage1";
+import NavBar from "../../commonComp/navBar/NavBar";
 // ScrollHorizontally(); 
 class Slider extends React.Component {
 
@@ -139,26 +141,9 @@ class Slider extends React.Component {
 
             <ReactFullpage.Wrapper>
               <div className="section">
-              <GetStart/>
+              <HomePage1/>
               </div>
-              <div className="section">
-              <MealManu/>
-              </div>
-              <div className="section">
-              <MealPlan/>
-              </div>
-              <div className="section">
-                <MealItem/> 
-              </div>
-              <div className="section">
-              <Order/>
-              </div>
-              <div className="section">
-              <Track/>
-              </div>
-              <div className="section">
-              <Questions/>
-              </div>
+              
             </ReactFullpage.Wrapper>
           );
         }}

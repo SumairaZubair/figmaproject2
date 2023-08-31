@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../Signup/verify.css'
-// import Footer from '../landingPage/questions/footer/Footer';
+import Footer from '../landingPage/questions/footer/Footer';
 // import Questions from '../Signup/questions/Questions'
 const Verified = () => {
     const [email, setEmail] = useState('');
@@ -49,7 +49,7 @@ const Verified = () => {
                     </div>
                 </div>
             </div>
-           {/* <Footer/> */}
+           <Footer/>
         </div>
     )
 }

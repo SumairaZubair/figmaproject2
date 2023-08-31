@@ -15,7 +15,7 @@ const MealItem =()=>{
                         <img className='dottI' src={require('../../Assest/dot.png')}/>
                     </div>
                     <div className='pinkdot'>
-                        <img src={require('../../Assest/pinkdots.png')}/>
+                        {/* <img src={require('../../Assest/pinkdots.png')}/> */}
                     </div>
                 </div>
             </div>
