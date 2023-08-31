@@ -108,20 +108,7 @@ import '../landingPage/style.css'
 // ScrollHorizontally(); 
 class Slider extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.fullpageApi = null;
-  }
-
-  componentDidMount() {
-    // Start auto-scrolling when the component mounts
-    this.startAutoScroll();
-  }
-
-  componentWillUnmount() {
-    // Clear the interval when the component is unmounted to prevent memory leaks
-    clearInterval(this.autoScrollInterval);
-  }
+  
 
   onLeave(origin, destination, direction) {
     console.log("Leaving section " + origin.index);
@@ -129,16 +116,10 @@ class Slider extends React.Component {
   afterLoad(origin, destination, direction) {
     console.log("After load: " + destination.index);
   }
-
+ 
   
-  startAutoScroll() {
-    // Set up an interval to scroll to the next section every 5 seconds
-    this.autoScrollInterval = setInterval(() => {
-      if (this.fullpageApi) {
-        this.fullpageApi.moveSectionDown();
-      }
-    }, 1000); // 5000 milliseconds (5 seconds)
-  }
+  
+  
   render() {
     return (
 
@@ -147,8 +128,10 @@ class Slider extends React.Component {
 <NavBar/>
      <ReactFullpage 
         navigation={true}
-        // scrollOverflow{false}
         scrollOverflow={false}
+        // autoScrolling={true}
+        // scrollOverflow={true}
+        
         onLeave={this.onLeave.bind(this)}
         afterLoad={this.afterLoad.bind(this)}
         render={({ state, fullpageApi }) => {
@@ -190,3 +173,85 @@ class Slider extends React.Component {
 // ReactDOM.render(<Slider />, document.getElementById("react-root"));
 
 export default Slider;
+
+
+
+// import React, { Component } from "react";
+// import ReactFullpage from "@fullpage/react-fullpage";
+// import GetStart from "./GetStart";
+// import Track from "./Track";
+// import MealManu from "./MeaLMenu";
+// import MealItem from "./MealItem";
+// import MealPlan from "./MealPlan";
+// import Order from "./Order";
+// import Questions from "./questions/Questions";
+// import NavBar from "../navBar/NavBar";
+// import "../landingPage/style.css";
+
+// class Slider extends Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.sections = [
+//       <GetStart />,
+//       <MealManu />,
+//       <MealPlan />,
+//       <MealItem />,
+//       <Order />,
+//       <Track />,
+//       <Questions />,
+//     ];
+
+//     this.state = {
+//       currentSection: 0,
+//     };
+//   }
+
+//   componentDidMount() {
+//     // Start automatic scrolling
+//     this.startAutoScroll();
+//   }
+
+//   componentWillUnmount() {
+//     // Stop automatic scrolling
+//     this.stopAutoScroll();
+//   }
+
+//   startAutoScroll() {
+//     this.intervalId = setInterval(() => {
+//       const nextSection = (this.state.currentSection + 1) % this.sections.length;
+//       this.setState({ currentSection: nextSection });
+//     }, 3000); // Adjust the interval (in milliseconds) as needed
+//   }
+
+//   stopAutoScroll() {
+//     clearInterval(this.intervalId);
+//   }
+
+//   render() {
+//     return (
+//       <>
+//         <NavBar />
+//         <ReactFullpage
+//           navigation={true}
+//           autoScrolling={true}
+//           scrollingSpeed={1000} // Adjust the scrolling speed as needed (in milliseconds)
+//           render={({ state, fullpageApi }) => {
+//             return (
+//               <ReactFullpage.Wrapper>
+//                 {this.sections.map((section, index) => (
+//                   <div className="section" key={index}>
+//                     {section}
+//                   </div>
+//                 ))}
+//               </ReactFullpage.Wrapper>
+//             );
+//           }}
+//         />
+//       </>
+//     );
+//   }
+// }
+
+// export default Slider;
+
