@@ -122,10 +122,10 @@ const navigate = useNavigate()
                                 <p>Or Connect With</p>
                                 <p className='linee'></p>
                             </div>
-                            <div className='fb-tweeter'>
+                            {/* <div className='fb-tweeter'>
                                 <button className='facebookk'>Facebook</button>
                                 <button className='twittter'>Twitter</button>
-                            </div>
+                            </div> */}
                             </div>
                         </div>
                     </div>

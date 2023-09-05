@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import './navBar.css'
 const NavBar =()=>{
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleForm=()=>{
-    //    navigate('/signUp')
+       navigate('/signUp')
     }
     return(
         <div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Data } from '../Data'
 import HomePage from './HomePage'
+import Button from './Button'
 // const HomePage1 = () => {
 //     const [ dataVal , setDataVal]=useState(Data)
 //     console.log(dataVal)
@@ -32,21 +33,25 @@ const HomePage1 = () => {
   
     return (
       <div>
-        <NavBar /> {/* Include your NavBar component here */}
+        {/* <NavBar />  */}
         <ReactFullpage
           navigation={true}
           scrollOverflow={false}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
-                {dataVal.map((section, index) => (
-                  <div className="section" key={index}>
+                {dataVal.map((section, number) => (
+                  <div className="section" key={number}>
                     <HomePage
+                    
                       image={section.image}
                       title={section.title}
                       description={section.description}
-                      dotImg={section.dotImg}
+                      // dotImg={section.dotImg}
+                      button={section.button}
+                      button1={section.button2}
                     />
+                    {/* {section.button?(<Button bgclr={'red'} btnText={section.button}/>):(null)} */}
                   </div>
                 ))}
               </ReactFullpage.Wrapper>

@@ -63,6 +63,7 @@ const SignUp = () => {
                             </div>
                             <div className='feild'>
                                 <form onSubmit={handleSubmit}>
+                                    <div className='flex-div'>
                                     <input
                                         className='name'
                                         type="text"
@@ -77,6 +78,7 @@ const SignUp = () => {
                                         value={lastName}
                                         onChange={(e) => setLastName(e.target.value)}
                                     />
+                                    </div>
                                     <input
                                         className='email'
                                         type="email"
@@ -106,10 +108,10 @@ const SignUp = () => {
                                     <p>Or Connect With</p>
                                     <p className='line'></p>
                                 </div>
-                                <div className='fb-tweet'>
+                                {/* <div className='fb-tweet'>
                                     <button className='facebook'>Facebook</button>
                                     <button className='twitter'>Twitter</button> {/* Corrected the class name */}
-                                </div>
+                                {/* </div> */} 
                             </div>
                         </div>
                     </div>

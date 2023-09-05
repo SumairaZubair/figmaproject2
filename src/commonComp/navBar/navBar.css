@@ -1,12 +1,13 @@
 .nav{
     height: 8vh;
-    width: 99.8%;
+    width: 99.9%;
     z-index: 1;
     margin: 0px;
     display: flex;
 align-items: center;
 justify-content: space-between;
 position: fixed;
+top: 0;
 background-color: #ffffff;
 /* border: 2px solid red; */
 }
@@ -31,7 +32,7 @@ letter-spacing: 0.18px;
 }
 @media (max-width:768px){
     .nav {
-        width: 98%;
+        width: 100%;
         margin: 0px;
         justify-content: space-between;
     }

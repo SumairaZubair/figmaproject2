@@ -321,8 +321,11 @@ const [formModal , setFormModal] = useState(false)
         centered // Center the modal vertically
         bodyStyle={{ background: 'white' }} // Set the background color to white
       >
-        <p>sgbujuhcnljdnsj</p>
-        <button>gyhsdihiushd</button>
+    <div className='center-div'>
+      <div className='modelh1'>
+        <h1></h1>
+      </div>
+    </div>
       </Modal>
       <>
         <Modal open={formModal} onCancel={formCancel} footer={null}style={{backgroundColor:"white", marginTop:'0px'}}>
