@@ -142,11 +142,13 @@ const [formModal , setFormModal] = useState(false)
   return (
     <div>
       <ProducerNavbar/>
-      <div className="producer-profile" style={{ padding: '10px', margin: "5px", background: "#f9f9f9" }}>
+      <div className="producer-profile" 
+      style={{ padding: '10px', margin: "5px", background: "#f9f9f9", overflow:'hidden' }}
+      >
         <div className='producer-profile-flex'>
-          <Row gutter={13}>
+          <Row gutter={15}>
             {/* Left Card */}
-            <Col xs={24} sm={12} lg={8}>
+            <Col xs={25} sm={12} lg={8}>
               <Card
                 title={<EditOutlined className="pen-card" onClick={showFormModal} />}
                 className="side-card"
@@ -319,11 +321,11 @@ const [formModal , setFormModal] = useState(false)
         footer={null}
         className="full-page-modal" // Add a class for styling
         centered // Center the modal vertically
-        bodyStyle={{ background: 'white' }} // Set the background color to white
+        bodyStyle={{ background: '#ffffffc'}} // Set the background color to white
       >
     <div className='center-div'>
       <div className='modelh1'>
-        <h1></h1>
+        <h1>Get started by creating your first business</h1>
       </div>
     </div>
       </Modal>

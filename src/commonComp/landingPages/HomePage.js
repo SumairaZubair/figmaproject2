@@ -1,6 +1,7 @@
 import React from 'react'
 import '../landingPages/homepage.css'
 import Button from './Button';
+import '../landingPages/style.css'
 const HomePage = (props) => {
     const {image,title,description,dotImg,button,button1} = props;
      
@@ -8,10 +9,10 @@ const HomePage = (props) => {
   return (
                 <div className='menu'>
                     <div className='menutext'>
-                      {/* <div className='hhh'> */}
+                    
                     <div className='dottI'>
                    
-                       
+                       {/* <img src={require('../Assest/dot.png')}/> */}
                     </div>
                       <div className='textHead'>
                       <h1 className='menuHead'>{title}</h1>
@@ -37,7 +38,7 @@ const HomePage = (props) => {
                          textSize={'16px'}
                          btnText={button}/>):(null)}
                        </div> 
-                       {/* </div> */}
+                     
                       </div>
                     </div>
                     <div className='menuItemImg'>

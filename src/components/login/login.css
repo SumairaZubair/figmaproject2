@@ -8,6 +8,11 @@
     padding-top: 5%;
     padding-bottom: 7%;
 }
+.error{
+    color: red;
+    font-size: 10px;
+    text-align: start;
+}
 
 .signUpFormm{
    display: flex;
