@@ -1,11 +1,9 @@
-// import dot from '../commonComp/Assest/dot.png'
-import Button from './landingPages/Button'
+
  export const Data=[{
    id: '1',
    title:'Take your meal prep company to the next level',
    description:'Cottage will help you reach more customers and simplify managing your site, your menus, and your orders, letting you focus on delivering great food.',
    dotImg: require('../commonComp/Assest/dot.png'),
-   // mealImg:'../commonComp/Assest/mealPlan.png'
    image: require('../commonComp/Assest/homepagew.png'),
    button:'GET STARTED',
    button2:'LEARN MORE'

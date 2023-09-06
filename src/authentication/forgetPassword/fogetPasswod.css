@@ -1,12 +1,12 @@
 .signUpContentV{
     width: 100%;
-    /* height: 100vh; */
      background-color: #F37357;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 7%;
+    
 }
 
 .signUpFormV{
@@ -20,17 +20,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 500px;
 height: 500px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .formV{
-width: 460px;
+    width: 460px;
 height: 450px;
 flex-shrink: 0;
-/* backgro    und-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
@@ -47,7 +46,7 @@ margin: 20px;
 letter-spacing: -0.48px;
 }
 .emailV{
-    width: 420px;
+    width: 400px;
     margin: 20px;
     margin-top: 20px;
     padding-left: 10px;
@@ -67,7 +66,7 @@ font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 157.5%; /* 22.05px */
+line-height: 157.5%; 
 letter-spacing: 0.14px;
 }
 .formV span{
@@ -102,7 +101,7 @@ letter-spacing: 0.14px;
     margin: 20px;
     border: 1px solid #FEAAAA;
 background: #FFE2E2;
-color: #FB5A5A;
+color: #FB5A5A ;
 font-family: Poppins;
 margin-top: -2px;
 font-size: 9px;
@@ -126,17 +125,27 @@ letter-spacing: 0.14px;
     color: #FB775A;
 font-family: Poppins;
 font-size: 14px;
-
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 letter-spacing: 0.14px;
 }
-
-
+.forgetPara{
+    color: #FB775A !important;
+}
+.closeBtn{
+    margin-right: 5px;
+}
+.errorP{
+    margin: 10px;
+    margin-left: 20px;
+    color: #FB775A;
+    font-size: 10px;
+    text-align: start;
+}
 @media (max-width: 768px) {
     .signUpContentV {
-        padding-top: 10%;
+        padding-top: 5%;
         padding-bottom: 10%;
         font-size: 13px;
     }
@@ -147,7 +156,7 @@ letter-spacing: 0.14px;
 width: 90%;
     }
     .signLogoV{
-        width: 60%;
+        width: 40%;
     }
 
     .formDivV {

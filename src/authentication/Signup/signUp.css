@@ -1,26 +1,26 @@
-.signUpContentt{
+.signUpContent{
     width: 100%;
-    /* height: 100vh; */
      background-color: #F37357;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 5%;
-    padding-bottom: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
-.error{
-    color: red;
-    font-size: 10px;
-    text-align: start;
+.flex-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.signUpFormm{
+
+.signUpForm{
    display: flex;
    align-items: center;
    justify-content:space-evenly;
    flex-direction: column;
 }
-.form-Div{
+.formDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,23 +31,33 @@ flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
-.formm{
-    width: 460px;
-height: 500px;
+.form{
+    width: 450px;
+height: 580px;
 flex-shrink: 0;
-/* background-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 
 }
-.signInn{
+.signIn{
     width: 223px;
 height: 50px;
- flex-shrink: 0;
-/* border: 1px solid #D4D7DD;
-background: #FAFAFA;  */
+flex-shrink: 0;
+border: 1px solid #D4D7DD;
+background: #FAFAFA;
 color: #192E46;
 text-align:center;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.36px;
+}
+.signUps{
+    width: 223px;
+    height: 50px;  
+    color: #192E46;
+text-align: center;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -56,34 +66,19 @@ letter-spacing: -0.36px;
 border: none;
 background: none;
 }
-.signUpss{
-    width: 234px;
-    height: 50px;  
-    color: #192E46;
-    border: 1px solid #D4D7DD;
-background: #FAFAFA;
-/* color: #192E46; */
-text-align: center;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.36px;
-/* border: none; */
-/* background: none; */
-}
-.feildd{
+.feild{
     margin: 30px;
     /* border: 2px solid black; */
 }
 .name{
-    width: 180.5px;
+    width: 170.5px;
     margin: 4px;
 height: 46px;
 flex-shrink: 0;
 border-radius: 4px;
 border: 1px solid #E0E4E9;
 background: #FFF;
+margin-left: 10px;
 padding-left: 10px;
 color: #9AA6B4;
 text-align:start;
@@ -107,7 +102,7 @@ background: #FFF;
 text-align:start;
 font-size: 14px;
 }
-.addresss{
+.address{
     width: 367px;
     margin: 4px;
     margin-top: 20px;
@@ -120,10 +115,10 @@ background: #FFF;
 text-align:start;
 font-size: 14px;
 }
-.signLogoo{
+.signLogo{
     width: 220px;
 }
-.passwordd{
+.password{
     width: 367px;
     margin: 4px;
     margin-top: 20px;
@@ -136,7 +131,7 @@ background: #FFF;
 text-align:start;
 font-size: 14px;
 }
-.sign-button{
+.signbutton{
     width: 367px;
     margin: 4px;
     margin-top: 20px;
@@ -160,16 +155,17 @@ letter-spacing: 0.14px;
 .terms span{
     color: #FB775A;
 font-size: 14px;
+cursor: pointer;
 font-style: normal;
 font-weight: 600;
 line-height: 157.5%;
 letter-spacing: 0.14px;
 }
-.connected{
+.connect{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+   /* margin-bottom: 30px; */
     color: #9AA6B4;
 font-size: 16px;
 font-style: normal;
@@ -177,21 +173,22 @@ font-weight: 500;
 line-height: 361.5%; /* 50.61px */
 letter-spacing: 0.28px;
 }
-.linee{
+.line{
     width: 100px;
 height: 1px;
 flex-shrink: 0;
-margin: 10px;
+/* margin: 10px; */
+/* margin-top: -3px; */
 border-radius: 4px;
 background: #E0E4E9;
 }
-.fb-tweeter{
+.fb-tweet{
     margin: 4px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
-.facebookk{
-    width: 180px;
-height: 43px;
+.facebook{
+    width: 170px;
+height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #3B5998;
@@ -203,21 +200,9 @@ font-weight: 600;
 line-height: normal;
 letter-spacing: 0.12px;
 }
-.forgot{
-    color: #F37357;
-    text-align: right;
-    color: #FB775A;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: 157.5%; /* 18.9px */
-letter-spacing: 0.12px;
-margin-right: 30px;
-cursor: pointer;
-}
-.twittter{
-    width: 180px;
-    height: 43px;
+.twitter{
+    width: 170px;
+    height: 40px;
     flex-shrink: 0;
     margin-left: 20px;
     border-radius: 4px;
@@ -230,38 +215,46 @@ font-weight: 600;
 line-height: normal;
 letter-spacing: 0.12px;
 }
+.error{
+    color: red;
+    text-align: start;
+    font-size: 10px;
+}
 
 
 @media (max-width: 768px) {
-    .signUpContentt {
+    .signUpContent {
         padding-top: 5%;
         padding-bottom: 3%;
     }
 
-    .form-Div,
-    .formm {
+    .formDiv,
+    .form {
         width: 100%; 
         height: auto; 
     }
-    .signInn,
-    .signUpss{
-        /* display: block; */
-        width: 50%;
-    }
+.signLogo{
+    width: 40%;
+}
+.signIn,
+.signUps{
+    /* display: block; */
+    width: 50%;
+}
     
     .name,
     .email,
-    .addresss,
-    .passwordd,
-    .sign-button,
+    .address,
+    .password,
+    .signbutton,
     .terms {
         width: 98%; 
     }
-    .connected{
+    .connect{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 20px;
         color: #9AA6B4;
         font-size: 16px;
     font-style: normal;
@@ -269,29 +262,31 @@ letter-spacing: 0.12px;
     line-height: 361.5%; /* 50.61px */
     letter-spacing: 0.28px;
     }
-    .linee{
-        width: 50px;
+    .line{
+        width: 40px;
     height: 1px;
     flex-shrink: 0;
     margin: 10px;
     border-radius: 4px;
     background: #E0E4E9;
     }
-.connected{
+.connect{
     margin-top:20px;
     text-align:center;
     line-height:normal;}
-.signLogoo{
-    width: 50%;
-}
-    .facebookk,
-    .twittter {
-        width: 100%; 
-        margin-left: 0;
-        margin-bottom: 10px; 
+    .flex-div{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
     }
-    .forgot{
-        margin-right: 1px;
+
+    .facebook,
+    .twitter {
+        /* width: 100%;  */
+        width: 45%; 
+        margin: 4px;
+        /* margin-left: 0;
+        margin-bottom: 10px;  */
     }
 }
 

@@ -1,25 +1,27 @@
-.signUpContent{
+.signUpContentt{
     width: 100%;
     /* height: 100vh; */
      background-color: #F37357;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 7%;
 }
-.flex-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.error{
+   
+    color: red;
+    font-size: 10px;
+    text-align: start;
 }
-.signUpForm{
+
+.signUpFormm{
    display: flex;
    align-items: center;
    justify-content:space-evenly;
    flex-direction: column;
 }
-.formDiv{
+.form-Div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,34 +32,23 @@ flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
-.form{
-    width: 450px;
-height: 580px;
+.formm{
+    width: 460px;
+height: 500px;
 flex-shrink: 0;
 /* background-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 
 }
-.signIn{
+.signInn{
     width: 223px;
 height: 50px;
-flex-shrink: 0;
-border: 1px solid #D4D7DD;
-background: #FAFAFA;
+ flex-shrink: 0;
+/* border: 1px solid #D4D7DD;
+background: #FAFAFA;  */
 color: #192E46;
 text-align:center;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.36px;
-}
-.signUps{
-    width: 223px;
-    height: 50px;  
-    color: #192E46;
-text-align: center;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -66,7 +57,23 @@ letter-spacing: -0.36px;
 border: none;
 background: none;
 }
-.feild{
+.signUpss{
+    width: 234px;
+    height: 50px;  
+    color: #192E46;
+    border: 1px solid #D4D7DD;
+background: #FAFAFA;
+/* color: #192E46; */
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.36px;
+/* border: none; */
+/* background: none; */
+}
+.feildd{
     margin: 30px;
     /* border: 2px solid black; */
 }
@@ -101,7 +108,7 @@ background: #FFF;
 text-align:start;
 font-size: 14px;
 }
-.address{
+.addresss{
     width: 367px;
     margin: 4px;
     margin-top: 20px;
@@ -114,10 +121,10 @@ background: #FFF;
 text-align:start;
 font-size: 14px;
 }
-.signLogo{
+.signLogoo{
     width: 220px;
 }
-.password{
+.passwordd{
     width: 367px;
     margin: 4px;
     margin-top: 20px;
@@ -130,7 +137,7 @@ background: #FFF;
 text-align:start;
 font-size: 14px;
 }
-.signbutton{
+.sign-button{
     width: 367px;
     margin: 4px;
     margin-top: 20px;
@@ -154,17 +161,16 @@ letter-spacing: 0.14px;
 .terms span{
     color: #FB775A;
 font-size: 14px;
-cursor: pointer;
 font-style: normal;
 font-weight: 600;
 line-height: 157.5%;
 letter-spacing: 0.14px;
 }
-.connect{
+.connected{
     display: flex;
     align-items: center;
     justify-content: center;
-   /* margin-bottom: 30px; */
+    margin-top: 40px;
     color: #9AA6B4;
 font-size: 16px;
 font-style: normal;
@@ -172,22 +178,21 @@ font-weight: 500;
 line-height: 361.5%; /* 50.61px */
 letter-spacing: 0.28px;
 }
-.line{
+.linee{
     width: 100px;
 height: 1px;
 flex-shrink: 0;
-/* margin: 10px; */
-/* margin-top: -3px; */
+margin: 10px;
 border-radius: 4px;
 background: #E0E4E9;
 }
-.fb-tweet{
+.fb-tweeter{
     margin: 4px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-.facebook{
-    width: 170px;
-height: 40px;
+.facebookk{
+    width: 180px;
+height: 43px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #3B5998;
@@ -199,9 +204,21 @@ font-weight: 600;
 line-height: normal;
 letter-spacing: 0.12px;
 }
-.twitter{
-    width: 170px;
-    height: 40px;
+.forgot{
+    color: #F37357;
+    text-align: right;
+    color: #FB775A;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; /* 18.9px */
+letter-spacing: 0.12px;
+margin-right: 30px;
+cursor: pointer;
+}
+.twittter{
+    width: 180px;
+    height: 43px;
     flex-shrink: 0;
     margin-left: 20px;
     border-radius: 4px;
@@ -214,46 +231,38 @@ font-weight: 600;
 line-height: normal;
 letter-spacing: 0.12px;
 }
-.error{
-    color: red;
-    text-align: start;
-    font-size: 10px;
-}
 
 
 @media (max-width: 768px) {
-    .signUpContent {
+    .signUpContentt {
         padding-top: 5%;
         padding-bottom: 3%;
     }
 
-    .formDiv,
-    .form {
+    .form-Div,
+    .formm {
         width: 100%; 
         height: auto; 
     }
-.signLogo{
-    width: 40%;
-}
-.signIn,
-.signUps{
-    /* display: block; */
-    width: 50%;
-}
+    .signInn,
+    .signUpss{
+        /* display: block; */
+        width: 50%;
+    }
     
     .name,
     .email,
-    .address,
-    .password,
-    .signbutton,
+    .addresss,
+    .passwordd,
+    .sign-button,
     .terms {
         width: 98%; 
     }
-    .connect{
+    .connected{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 40px;
         color: #9AA6B4;
         font-size: 16px;
     font-style: normal;
@@ -261,30 +270,29 @@ letter-spacing: 0.12px;
     line-height: 361.5%; /* 50.61px */
     letter-spacing: 0.28px;
     }
-    .line{
-        width: 40px;
+    .linee{
+        width: 50px;
     height: 1px;
     flex-shrink: 0;
     margin: 10px;
     border-radius: 4px;
     background: #E0E4E9;
     }
-.connect{
+.connected{
     margin-top:20px;
     text-align:center;
     line-height:normal;}
-    .flex-div{
-        display: flex;
-        flex-wrap: wrap;
+.signLogoo{
+    width: 50%;
+}
+    .facebookk,
+    .twittter {
+        width: 100%; 
+        margin-left: 0;
+        margin-bottom: 10px; 
     }
-
-    .facebook,
-    .twitter {
-        /* width: 100%;  */
-        width: 45%; 
-        margin: 4px;
-        /* margin-left: 0;
-        margin-bottom: 10px;  */
+    .forgot{
+        margin-right: 1px;
     }
 }
 

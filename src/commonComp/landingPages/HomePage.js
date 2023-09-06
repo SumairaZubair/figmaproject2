@@ -1,18 +1,17 @@
 import React from 'react'
 import '../landingPages/homepage.css'
-import Button from './Button';
+import Button from '../button/Button';
 import '../landingPages/style.css'
 const HomePage = (props) => {
     const {image,title,description,dotImg,button,button1} = props;
      
-    // console.log(image);
   return (
                 <div className='menu'>
                     <div className='menutext'>
                     
                     <div className='dottI'>
-                   
-                       {/* <img src={require('../Assest/dot.png')}/> */}
+                   <img src={require('../Assest/dot.png')}/>
+            
                     </div>
                       <div className='textHead'>
                       <h1 className='menuHead'>{title}</h1>
@@ -44,10 +43,8 @@ const HomePage = (props) => {
                     <div className='menuItemImg'>
                     <img src={image} className='menuItemImg'/>
                     </div>
-                   
                 </div>
-    //         </div>
-    // </div>
+
   )
 }
 
