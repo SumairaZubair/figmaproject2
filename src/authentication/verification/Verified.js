@@ -1,17 +1,35 @@
 
-import React, { useState } from 'react';
+import React,{useState} from 'react';
+import { useEffect } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../fFirebaseConfig';
 import '../verification/verify.css';
+import { message } from 'antd';
 
 const Verified = () => {
   const [confirmationMessage, setConfirmationMessage] = useState('');
-  const [confirmationCode, setConfirmationCode] = useState('');
-  const [closeMsg, setCloseMsg] = useState(false);
+ const navigate=useNavigate()
+const [emailVerified, setEmailVerified]=useState(false)
+ 
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      console.log(currentUser)
+      if (currentUser) {
+        if (currentUser.emailVerified) {
+         message.info('Email is verified');
 
-  const handleConfirmationCodeChange = (e) => {
-    setConfirmationCode(e.target.value);
-  };
+        } else {
+         message.info('Email is not verified');
+        }
+      }
+    });
+  
+    return () => unsubscribe();
+  }, []);
+  
 
   const formik = useFormik({
     initialValues: {
@@ -24,19 +42,25 @@ const Verified = () => {
         .required('Email is required'),
       code: Yup.string().required('Confirmation code is required'), 
     }),
-    onSubmit: (values) => {
-      if (closeMsg) {
-        setConfirmationMessage('');
-      } else {
-        setConfirmationMessage(`Confirmation code for ${values.email} has been verified.`);
-      }
-      setCloseMsg(!closeMsg);
+    onSubmit: () => {
+      
+  // if (emailVerified) {
+  //   navigate('/proAcc');
+  // } else {
+  //   setConfirmationMessage('Email is not yet verified.');
+  // }
     },
   });
   const handleSubmit = (e) => {
     e.preventDefault(); 
-    formik.handleSubmit(); 
+    // formik.handleSubmit();
+    if (emailVerified) {
+      navigate('/proAcc');
+    } else {
+      setConfirmationMessage('Email is not yet verified.');
+    } 
   };
+
 
   return (
     <div>
@@ -46,9 +70,13 @@ const Verified = () => {
           <div className='formDivV'>
             <div className='formV'>
               <h1>Verification Code</h1>
-              <p>We emailed you a six-digit code to <span>{formik.values.email}</span>. Enter the code below to confirm your email address:</p>
-
-              <input
+              <p>We emailed you a link please click on link and verify your email</p>
+                   <div>
+                    {emailVerified ?(<p className='verifyEmail'>Email verified now you can accessc your account</p>):
+                    <p className='verifyEmail'>Your email is not verified</p>
+                    }
+                   </div>
+              {/* <input
                 className='emailVv'
                 type="text"
                 placeholder="your one-time six-digit code"
@@ -57,12 +85,12 @@ const Verified = () => {
                 required
                 name="code" 
                 {...formik.getFieldProps('code')} 
-              />
-              {formik.touched.code && formik.errors.code ? (
+              /> */}
+              {/* {formik.touched.code && formik.errors.code ? (
                 <div className="errorV">{formik.errors.code}</div>
-              ) : null}
+              ) : null} */}
 
-              <button className='verifyBtn' type="submit" onClick={handleSubmit}>Verify Now</button>
+              <button className='verifyBtn' type="submit" onClick={handleSubmit} >Verify Now</button>
               <p className='confirmMsg'>{confirmationMessage}</p>
               <p className='ask'> Question? <span>We are here to help</span></p>
             </div>
@@ -74,3 +102,5 @@ const Verified = () => {
 };
 
 export default Verified;
+
+

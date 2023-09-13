@@ -139,7 +139,11 @@ letter-spacing: 0.14px;
     color: red;
     margin: 20px;
 }
+.verifyEmail{
 
+    color: #FB775A !important;
+
+}
 
 @media (max-width: 768px) {
     .signUpContentV {

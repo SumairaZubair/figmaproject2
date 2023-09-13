@@ -4,6 +4,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import '../landingPages/style.css'
 import HomePage1 from "../../commonComp/landingPages/HomePage1";
 import NavBar from "../../commonComp/navBar/NavBar";
+import LastHomePage from "../lastHomePage/LastHomePage";
  
 class Slider extends React.Component {
 
@@ -36,6 +37,7 @@ class Slider extends React.Component {
             <ReactFullpage.Wrapper>
               <div className="section">
               <HomePage1/>
+              {/* <LastHomePage/> */}
               </div>
               
             </ReactFullpage.Wrapper>

@@ -143,6 +143,10 @@ letter-spacing: 0.14px;
     font-size: 10px;
     text-align: start;
 }
+.custom-message{
+ 
+  font-size: 20px;
+}
 @media (max-width: 768px) {
     .signUpContentV {
         padding-top: 5%;

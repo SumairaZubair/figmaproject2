@@ -1,16 +1,14 @@
-
-const Button =({bgclr,btnText, width,height,radius,border,textColor,textSize})=>{
+import '../button/button.css'
+const Button =({bgclr,btnText,border,textColor})=>{
 
     return(
-        <div>
+        <div className='btndisplaypage'>
            <button
-        style={{backgroundColor:bgclr,
-            width:width,
-            height:height,
-            borderRadius:radius,
+           className="commonButton"
+        style={{
+            backgroundColor:bgclr,
             border:border,
             color:textColor,
-            fontSize:textSize
         
         }}>{btnText}</button>
         </div>

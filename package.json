@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.8.4",
+    "firebase": "^10.3.1",
     "formik": "^2.4.3",
     "fullpage.js": "^4.0.20",
     "rc-slider": "^10.2.1",
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0"
   }
 }

@@ -1,10 +1,17 @@
 
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import React from 'react';
+import { useState } from 'react'; 
+import { auth } from '../fFirebaseConfig';
+import { sendPasswordResetEmail } from 'firebase/auth';
 import '../forgetPassword/fogetPasswod.css';
+import { message } from 'antd'
+import { useNavigate } from 'react-router-dom';
+// import 'antd/dist/antd.css';
+// import { Content } from 'antd/es/layout/layout';
 
 const ForgetPassword = () => {
+const navigate= useNavigate()
   const initialValues = {
     email: '',
   };
@@ -13,10 +20,23 @@ const ForgetPassword = () => {
     email: Yup.string().email('Invalid email address').required('Email is required'),
   });
 
-  const onSubmit = (values) => {
-    setInstruction(
-      'If your email address is exists in our database, you will receive a password recovery link at your email address in a few minutes'
-    );
+  const onSubmit = async (values) => {
+    try {
+      await sendPasswordResetEmail(auth,values.email)
+      message.success({
+        content: 'Check your email.',
+        className: 'custom-message', // Apply the custom CSS class
+      });
+navigate('/login')
+      // 
+      setInstruction(
+        'If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes'
+      );
+    } catch (error) {
+      message.error('reset password failed')
+      console.error('Error setPassword:', error.message);
+    }
+   
     if (close) {
       setInstruction('');
     } else {
@@ -33,8 +53,8 @@ const ForgetPassword = () => {
     onSubmit,
   });
 
-  const [instruction, setInstruction] = React.useState('');
-  const [close, setClose] = React.useState(false);
+  const [instruction, setInstruction] = useState('');
+  const [close, setClose] = useState(false);
 
   return (
     <div>
@@ -56,7 +76,7 @@ const ForgetPassword = () => {
                     <div className='errorP'>{formik.errors.email}</div>
                   ) : null}
                 <button className='verifyBtn' type='submit'>
-                  Send Instruction
+                  Send 
                 </button>
               </form>
               <p className='confirmMsg'>{instruction}</p>
@@ -72,3 +92,6 @@ const ForgetPassword = () => {
 };
 
 export default ForgetPassword;
+
+
+
