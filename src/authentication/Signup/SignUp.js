@@ -159,7 +159,7 @@
 
 import './signUp.css';
 import React, { useState } from 'react';
-import { Formik, Field, Form,ErrorMessage } from 'formik';
+import {  Formik ,Field, Form,ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { createUserWithEmailAndPassword ,sendEmailVerification} from 'firebase/auth';
 import { Modal as AntModal } from 'antd';
@@ -232,25 +232,23 @@ const SignUp = () => {
                   }}
                 >
                   <Form>
-                    <div className="flex-div">
-                      <Field
-                        className="name"
-                        type="text"
-                        name="firstName"
-                        placeholder="First Name"
-                      />
-               <ErrorMessage name="firstName" component="div" className="error" />
-
-                      
-                      <Field
-                        className="name"
-                        type="text"
-                        name="lastName"
-                        placeholder="Last Name"
-                      />
-                   <ErrorMessage name="lastName" component="div" className="error" />
-
-                    </div>
+  <div className="flex-div" >
+  <Field
+    className="name"
+    type="text"
+    name="firstName"
+    placeholder="First Name"
+  />
+  
+  <Field
+    className="name"
+    type="text"
+    name="lastName"
+    placeholder="Last Name"
+  />
+</div>
+  <ErrorMessage name="firstName" component="div" className="error" />
+  <ErrorMessage name="lastName" component="div" className="error" />
                     <Field className="email" type="email" name="email" placeholder="Email" />
                     <ErrorMessage name="email" component="div" className="error" />
 

@@ -1,9 +1,7 @@
 .producerNav{
     width: 99%;
-    /* border: 2px solid red; */
     padding: 3px;
     background-color: rgb(255, 255, 255);
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,7 +11,6 @@
 }
 .producerNavText{
     width: 130px;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,10 +19,9 @@
     color: #B6C5D6;
 text-align: right;
 font-variant-numeric: lining-nums proportional-nums;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
-line-height: 25.5px; /* 141.667% */
+line-height: 25.5px; 
 letter-spacing: 0.18px;
 }

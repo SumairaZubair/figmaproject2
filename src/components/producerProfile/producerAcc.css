@@ -4,40 +4,28 @@
 }
 .producer-profile-flex{
     background-color: #f3f0f0;
-    /* background-color: #768CA5; */
-    /* padding: 20px; */
  
 }
 .pen-card title{
     background-color: white
-    /* background-color: #FB5A5A; */
 }
 .right-card{
     width: 75%;
     margin-top: 10px;
-    /* margin-bottom: 20px; */
     background: transparent;
-    /* border: 2px solid blue; */
-
 }
 .cards-2{
    margin-bottom:10px;
-    /* border: 2px solid red; */
     background: #ffffff;
-    /* padding: 10px; */
 }
 .pizzaCard{
     border: none;
-    /* border: 2px solid pink; */
     background: white;
-    /* padding: 1px; */
-    /* margin: 2px; */
 }
 .local{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: rgb(164, 116, 116); */
     border: none;
     padding: 10px;
     margin: -5px;
@@ -70,10 +58,8 @@ width: 80%;
     margin-bottom: 20px;
 }
 .profile-card{
-    /* padding: 10px; */
     margin-top: 20px;
     background-color: #ffffff;
-    /* border: 2px solid blue; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,8 +100,6 @@ letter-spacing: 0.7px;
 .part{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-/* margin-bottom: 20px; */
 }
 .active{
     color: #192E46;
@@ -144,15 +128,12 @@ border-radius: 4px;
 background: #FB775A;
 }
 .main-card{
-    /* width: 50%; */
     display: flex;
     align-items: center;
     justify-content: space-between ;
     flex-direction: column;
 }
  .big-flex{
-    /* width:100%;S */
-    /* background-color: #4C6889; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -215,7 +196,6 @@ letter-spacing: 0.14px;
     padding: 1px 24px;
 }
 .ant-card .ant-card-body {
-    /* padding: 10px; */
     border-radius: 0 0 8px 8px;
 }
 .edit{
@@ -252,8 +232,8 @@ letter-spacing: 0.18px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 58, 102, 0.503); /* Set the color and opacity of the overlay */
-    border-radius: 60px; /* Ensure the overlay matches the border radius of the image */
+    background-color: rgba(17, 58, 102, 0.503); 
+    border-radius: 60px;
     z-index: 1; /* Place the overlay above the image */
 }
 .pennIcon{

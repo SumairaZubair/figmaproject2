@@ -12,7 +12,7 @@ const NavBar =()=>{
 <div className="nav">
                     <div>
 
-                        <img className='cottage' src={require('../../Assest/LOGO.png')} alt='cottage' />
+                        <img className='Cottage' src={require('../../Assest/LOGO.png')} alt='cottage' />
                     </div>
                     <div>
                         <button className='signin' onClick={handleForm}>SIGN UP</button>

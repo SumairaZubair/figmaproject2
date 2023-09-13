@@ -5,8 +5,8 @@
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 5%;
-    padding-bottom: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .error{
    
@@ -36,17 +36,13 @@ box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
     width: 460px;
 height: 500px;
 flex-shrink: 0;
-/* background-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
-
 }
 .signInn{
-    width: 223px;
+    width: 226px;
 height: 50px;
  flex-shrink: 0;
-/* border: 1px solid #D4D7DD;
-background: #FAFAFA;  */
 color: #192E46;
 text-align:center;
 font-size: 18px;
@@ -60,10 +56,9 @@ background: none;
 .signUpss{
     width: 234px;
     height: 50px;  
-    color: #192E46;
+    color: #697482;
     border: 1px solid #D4D7DD;
 background: #FAFAFA;
-/* color: #192E46; */
 text-align: center;
 font-size: 18px;
 font-style: normal;
@@ -122,7 +117,8 @@ text-align:start;
 font-size: 14px;
 }
 .signLogoo{
-    width: 220px;
+    width: 200px;
+    margin-bottom:10px ;
 }
 .passwordd{
     width: 367px;
@@ -138,7 +134,7 @@ text-align:start;
 font-size: 14px;
 }
 .sign-button{
-    width: 367px;
+    width: 379px ;
     margin: 4px;
     margin-top: 20px;
 height: 46px;
@@ -241,7 +237,7 @@ letter-spacing: 0.12px;
 
     .form-Div,
     .formm {
-        width: 100%; 
+        width: 90%; 
         height: auto; 
     }
     .signInn,
@@ -254,9 +250,11 @@ letter-spacing: 0.12px;
     .email,
     .addresss,
     .passwordd,
-    .sign-button,
     .terms {
         width: 98%; 
+    }
+    .sign-button{
+        width: 102%; 
     }
     .connected{
         display: flex;

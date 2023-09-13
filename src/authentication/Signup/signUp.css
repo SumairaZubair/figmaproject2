@@ -25,15 +25,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 550px;
-height: 600px;
+    width: 530px;
+height: 630px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .form{
     width: 450px;
-height: 580px;
+height: 550px;
 flex-shrink: 0;
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
@@ -45,7 +45,7 @@ height: 50px;
 flex-shrink: 0;
 border: 1px solid #D4D7DD;
 background: #FAFAFA;
-color: #192E46;
+color: #626f7f;
 text-align:center;
 font-size: 18px;
 font-style: normal;
@@ -87,6 +87,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.28px;
+margin-top: 20px;
 
 }
 .email{
@@ -116,8 +117,12 @@ text-align:start;
 font-size: 14px;
 }
 .signLogo{
-    width: 220px;
+    width: 190px;
+    margin-bottom: 10px;
 }
+.flex-column {
+    flex-direction: column;
+  }
 .password{
     width: 367px;
     margin: 4px;
@@ -230,7 +235,7 @@ letter-spacing: 0.12px;
 
     .formDiv,
     .form {
-        width: 100%; 
+        width: 90%; 
         height: auto; 
     }
 .signLogo{
@@ -278,6 +283,7 @@ letter-spacing: 0.12px;
         display: flex;
         flex-wrap: wrap;
         margin-left: 10px;
+        /* margin-bottom: 10px; */
     }
 
     .facebook,

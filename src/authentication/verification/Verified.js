@@ -12,7 +12,7 @@ import { message } from 'antd';
 const Verified = () => {
   const [confirmationMessage, setConfirmationMessage] = useState('');
  const navigate=useNavigate()
-const [emailVerified, setEmailVerified]=useState(false)
+const [emailVerified, setEmailVerified]=useState(true)
  
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -23,6 +23,7 @@ const [emailVerified, setEmailVerified]=useState(false)
 
         } else {
          message.info('Email is not verified');
+         setEmailVerified('')
         }
       }
     });

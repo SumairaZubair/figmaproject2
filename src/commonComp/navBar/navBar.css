@@ -1,6 +1,6 @@
 .nav{
-    height: 8vh;
-    width: 99.9%;
+    height: 12vh;
+    width: 99.8%;
     z-index: 1;
     margin: 0px;
     display: flex;
@@ -9,36 +9,37 @@ justify-content: space-between;
 position: fixed;
 top: 0;
 background-color: #ffffff;
-/* border: 2px solid red; */
+
 }
-.cottage{
-    width: 80%;
+.Cottage{
+    margin: 25px;
+    /* margin-left: 20px; */
+    width: 70%;
 }
 .signin{
-    width: 150px;
-height: 50px;
+    width: 160px;
+height: 45px;
 flex-shrink: 0;
 border-radius: 4px;
-border: 2px solid #192E46;
+border: 1px solid #192E46;
 background: #FFF;
 color: #192E46;
 text-align: center;
-font-family: Poppins;
 font-size: 17px;
-font-style: normal;
 font-weight: 600;
-line-height: 157.5%; /* 28.35px */
-letter-spacing: 0.18px;
+margin-right: 20px;
+
 }
 @media (max-width:768px){
     .nav {
         width: 100%;
         margin: 0px;
+        height: auto;
         justify-content: space-between;
     }
 
-    .cottage{
-        margin: 2px;
+    .Cottage{
+        margin: 10px;
         width: 60%;
     }
     .signin {

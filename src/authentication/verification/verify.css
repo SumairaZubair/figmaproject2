@@ -38,7 +38,6 @@ box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 .formDivV h1{
     color: #192E46;
 text-align: center;
-font-family: Poppins;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
@@ -50,7 +49,7 @@ letter-spacing: -0.48px;
     width: 400px;
     margin: 20px;
  
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 10px;
 height: 46px;
 flex-shrink: 0;
@@ -58,13 +57,11 @@ border-radius: 4px;
 border: 1px solid #92908f;
 background: #FFF;
 text-align:start;
-font-family: Poppins;
 font-size: 14px;
 }
 .formV p{
     color: #192E46;
 text-align: center;
-font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -73,7 +70,6 @@ letter-spacing: 0.14px;
 }
 .formV span{
     color: #FB775A;
-font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -92,7 +88,6 @@ border: none;
 margin: 20px;
 margin-top: -2px;
 color: #FFF;
-font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
@@ -105,7 +100,6 @@ letter-spacing: 0.14px;
     border: 1px solid #FEAAAA;
 background: #FFE2E2;
 color: #FB5A5A;
-font-family: Poppins;
 margin-top: -2px;
 font-size: 9px;
 font-style: normal;
@@ -116,7 +110,6 @@ letter-spacing: 0.18px;
 .ask{
     color: #192E46;
 text-align: center;
-font-family: Poppins;
 font-size: 14pxpx;
 margin: 50px;
 font-style: normal;
@@ -126,13 +119,16 @@ letter-spacing: 0.14px;
 }
 .ask span{
     color: #FB775A;
-font-family: Poppins;
 font-size: 14px;
 
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 letter-spacing: 0.14px;
+}
+.signLogoV{
+    width: 200px;
+    margin-bottom: 10px;
 }
 .errorV{
     font-size: 10px;
@@ -155,20 +151,20 @@ letter-spacing: 0.14px;
         font-size: 13px;
     }
     .formV{
-width: 90%;
+width: 93%;
     }
     .signLogoV{
         width: 60%;
     }
 
     .formDivV {
-        width: 90%;
+        width: 93%;
     }
 
     .emailVv,
     .verifyBtn,
     .confirmMsg {
-        width: 90%;
+        width: 88%;
         margin: 10px;
     }
 }
