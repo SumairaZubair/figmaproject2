@@ -10,14 +10,14 @@
     width: 98%;
     height: 100vh;
     display: flex;
-    /* margin-top: 10%; */
+    margin-top: 10%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .trackHead{
     width: 50%;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 10px;
 }
 .trackImg{
@@ -86,11 +86,12 @@ letter-spacing: 0.18px;
     .mainDiv {
         width: 100%;
          padding: 10px;
+         margin-top: 2%;
     }
     
     .trackHead {
         width: 80%;
-        margin-top: 50px;
+        margin-top: 30px;
     }    
 
     .trackImg{
