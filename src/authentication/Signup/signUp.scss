@@ -1,3 +1,35 @@
+@mixin sign-inputs{
+    width: 367px;
+    margin: 4px;
+    margin-top: 20px;
+    padding-left: 10px;
+height: 46px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #E0E4E9;
+background: #FFF;
+text-align:start;
+font-size: 14px;
+}
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin signIn-signUp-btn{
+    width: 223px;
+    height: 50px;
+    flex-shrink: 0;
+    border: 1px solid #D4D7DD;
+    background: #FAFAFA;
+    color: #626f7f;
+    text-align:center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
 .signUpContent{
     width: 100%;
      background-color: #F37357;
@@ -8,23 +40,17 @@
     padding-bottom: 3%;
 }
 .flex-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
 }
 
 
 .signUpForm{
-   display: flex;
-   align-items: center;
-   justify-content:space-evenly;
+  @include  flex;
    flex-direction: column;
 }
 .formDiv{
-    display: flex;
+  @include flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 530px;
 height: 630px;
 flex-shrink: 0;
@@ -40,35 +66,16 @@ box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 
 }
 .signIn{
-    width: 223px;
-height: 50px;
-flex-shrink: 0;
-border: 1px solid #D4D7DD;
-background: #FAFAFA;
-color: #626f7f;
-text-align:center;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.36px;
+  @include  signIn-signUp-btn;
 }
 .signUps{
-    width: 223px;
-    height: 50px;  
-    color: #192E46;
-text-align: center;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.36px;
-border: none;
-background: none;
+  @include signIn-signUp-btn;
+  border: none;
+  background: transparent;
+  color: #192E46;
 }
 .feild{
     margin: 30px;
-    /* border: 2px solid black; */
 }
 .name{
     width: 170.5px;
@@ -91,30 +98,11 @@ margin-top: 20px;
 
 }
 .email{
-    width: 367px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-left: 10px;
-height: 46px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 1px solid #FB775A;
-background: #FFF;
-text-align:start;
-font-size: 14px;
+@include sign-inputs;
+ border: 1px solid #FB775A;
 }
 .address{
-    width: 367px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-left: 10px;
-height: 46px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 1px solid #E0E4E9;
-background: #FFF;
-text-align:start;
-font-size: 14px;
+@include sign-inputs;
 }
 .signLogo{
     width: 190px;
@@ -124,17 +112,7 @@ font-size: 14px;
     flex-direction: column;
   }
 .password{
-    width: 367px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-left: 10px;
-height: 46px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 1px solid #E0E4E9;
-background: #FFF;
-text-align:start;
-font-size: 14px;
+@include sign-inputs;
 }
 .signbutton{
     width: 367px;
@@ -154,7 +132,7 @@ font-size: 14px;
 margin: 4px;
 font-style: normal;
 font-weight: 400;
-line-height: 157.5%; /* 22.05px */
+line-height: 157.5%; 
 letter-spacing: 0.14px;
 }
 .terms span{
@@ -167,63 +145,25 @@ line-height: 157.5%;
 letter-spacing: 0.14px;
 }
 .connect{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   /* margin-bottom: 30px; */
+   @include flex;
     color: #9AA6B4;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 361.5%; /* 50.61px */
+line-height: 361.5%;
 letter-spacing: 0.28px;
 }
 .line{
     width: 100px;
 height: 1px;
 flex-shrink: 0;
-/* margin: 10px; */
-/* margin-top: -3px; */
 border-radius: 4px;
 background: #E0E4E9;
-}
-.fb-tweet{
-    margin: 4px;
-    margin-top: 10px;
-}
-.facebook{
-    width: 170px;
-height: 40px;
-flex-shrink: 0;
-border-radius: 4px;
-background: #3B5998;
-border: none;
-color: #FFF;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.12px;
-}
-.twitter{
-    width: 170px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-left: 20px;
-    border-radius: 4px;
-background: #00ACEE;
-border: none;
-color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.12px;
 }
 .error{
     color: red;
     text-align: start;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
@@ -243,7 +183,6 @@ letter-spacing: 0.12px;
 }
 .signIn,
 .signUps{
-    /* display: block; */
     width: 50%;
 }
     
@@ -256,15 +195,13 @@ letter-spacing: 0.12px;
         width: 98%; 
     }
     .connect{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
         margin-top: 20px;
         color: #9AA6B4;
         font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 361.5%; /* 50.61px */
+    line-height: 361.5%; 
     letter-spacing: 0.28px;
     }
     .line{
@@ -283,16 +220,12 @@ letter-spacing: 0.12px;
         display: flex;
         flex-wrap: wrap;
         margin-left: 10px;
-        /* margin-bottom: 10px; */
     }
 
     .facebook,
     .twitter {
-        /* width: 100%;  */
         width: 45%; 
         margin: 4px;
-        /* margin-left: 0;
-        margin-bottom: 10px;  */
     }
 }
 

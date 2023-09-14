@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../fFirebaseConfig';
-import '../verification/verify.css';
+import '../verification/verify.scss';
 import { message } from 'antd';
 
 const Verified = () => {

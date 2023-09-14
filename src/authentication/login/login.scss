@@ -1,7 +1,28 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+@mixin normal-style{
+    line-height: normal;
+    font-style: normal;
+}
+@mixin border-color{
+    border: 1px solid #E0E4E9;
+background: #FFF;
+}
+@mixin input-wd-he{
+    width: 367px;
+    margin: 4px;
+    margin-top: 20px;
+    padding-left: 10px;
+height: 46px;
+}
+$main-color:#FB775A;
 .signUpContentt{
     width: 100%;
-    /* height: 100vh; */
-     background-color: #F37357;
+     background-color:$main-color;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
@@ -9,23 +30,16 @@
     padding-bottom: 3%;
 }
 .error{
-   
     color: red;
-    font-size: 10px;
+    font-size: 15px;
     text-align: start;
 }
 
 .signUpFormm{
-   display: flex;
-   align-items: center;
-   justify-content:space-evenly;
-   flex-direction: column;
+@include flex;
 }
 .form-Div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     width: 550px;
 height: 600px;
 flex-shrink: 0;
@@ -46,9 +60,8 @@ height: 50px;
 color: #192E46;
 text-align:center;
 font-size: 18px;
-font-style: normal;
 font-weight: 600;
-line-height: normal;
+@include normal-style;
 letter-spacing: -0.36px;
 border: none;
 background: none;
@@ -57,20 +70,17 @@ background: none;
     width: 234px;
     height: 50px;  
     color: #697482;
-    border: 1px solid #D4D7DD;
+@include border-color;
 background: #FAFAFA;
 text-align: center;
 font-size: 18px;
-font-style: normal;
+@include normal-style;
 font-weight: 600;
-line-height: normal;
 letter-spacing: -0.36px;
-/* border: none; */
-/* background: none; */
+
 }
 .feildd{
     margin: 30px;
-    /* border: 2px solid black; */
 }
 .name{
     width: 180.5px;
@@ -78,41 +88,30 @@ letter-spacing: -0.36px;
 height: 46px;
 flex-shrink: 0;
 border-radius: 4px;
-border: 1px solid #E0E4E9;
-background: #FFF;
+@include border-color;
 padding-left: 10px;
 color: #9AA6B4;
 text-align:start;
 font-size: 14px;
-font-style: normal;
+@include normal-style;
 font-weight: 500;
-line-height: normal;
 letter-spacing: 0.28px;
 
 }
 .email{
-    width: 367px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-left: 10px;
-height: 46px;
+  @include  input-wd-he;
 flex-shrink: 0;
 border-radius: 4px;
-border: 1px solid #FB775A;
+border: 1px solid $main-color;
 background: #FFF;
 text-align:start;
 font-size: 14px;
 }
 .addresss{
-    width: 367px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-left: 10px;
-height: 46px;
+   @include input-wd-he;
 flex-shrink: 0;
 border-radius: 4px;
-border: 1px solid #E0E4E9;
-background: #FFF;
+@include border-color;
 text-align:start;
 font-size: 14px;
 }
@@ -121,26 +120,18 @@ font-size: 14px;
     margin-bottom:10px ;
 }
 .passwordd{
-    width: 367px;
-    margin: 4px;
-    margin-top: 20px;
-    padding-left: 10px;
-height: 46px;
+    @include  input-wd-he;
 flex-shrink: 0;
 border-radius: 4px;
-border: 1px solid #E0E4E9;
-background: #FFF;
+@include border-color;
 text-align:start;
 font-size: 14px;
 }
 .sign-button{
-    width: 379px ;
-    margin: 4px;
-    margin-top: 20px;
-height: 46px;
+ @include input-wd-he;
 flex-shrink: 0;
 border-radius: 4px;
-background: #FB775A;
+background: $main-color;
 border: none;
 color: #FFF;
 font-size: 14px;
@@ -151,27 +142,24 @@ font-size: 14px;
 margin: 4px;
 font-style: normal;
 font-weight: 400;
-line-height: 157.5%; /* 22.05px */
+line-height: 157.5%; 
 letter-spacing: 0.14px;
 }
 .terms span{
-    color: #FB775A;
+    color: $main-color;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
-line-height: 157.5%;
-letter-spacing: 0.14px;
 }
 .connected{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
+    flex-direction: row;
     margin-top: 40px;
     color: #9AA6B4;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 361.5%; /* 50.61px */
+line-height: 361.5%; 
 letter-spacing: 0.28px;
 }
 .linee{
@@ -182,53 +170,17 @@ margin: 10px;
 border-radius: 4px;
 background: #E0E4E9;
 }
-.fb-tweeter{
-    margin: 4px;
-    margin-top: 20px;
-}
-.facebookk{
-    width: 180px;
-height: 43px;
-flex-shrink: 0;
-border-radius: 4px;
-background: #3B5998;
-border: none;
-color: #FFF;
-font-size: 12px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.12px;
-}
 .forgot{
-    color: #F37357;
+    color: $main-color;
     text-align: right;
-    color: #FB775A;
 font-size: 12px;
 font-style: normal;
 font-weight: 600;
-line-height: 157.5%; /* 18.9px */
+line-height: 157.5%; 
 letter-spacing: 0.12px;
 margin-right: 30px;
 cursor: pointer;
 }
-.twittter{
-    width: 180px;
-    height: 43px;
-    flex-shrink: 0;
-    margin-left: 20px;
-    border-radius: 4px;
-background: #00ACEE;
-border: none;
-color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.12px;
-}
-
-
 @media (max-width: 768px) {
     .signUpContentt {
         padding-top: 5%;
@@ -242,7 +194,6 @@ letter-spacing: 0.12px;
     }
     .signInn,
     .signUpss{
-        /* display: block; */
         width: 50%;
     }
     
@@ -257,9 +208,8 @@ letter-spacing: 0.12px;
         width: 102%; 
     }
     .connected{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
+        flex-direction: row;
         margin-top: 40px;
         color: #9AA6B4;
         font-size: 16px;
@@ -283,12 +233,6 @@ letter-spacing: 0.12px;
 .signLogoo{
     width: 50%;
 }
-    .facebookk,
-    .twittter {
-        width: 100%; 
-        margin-left: 0;
-        margin-bottom: 10px; 
-    }
     .forgot{
         margin-right: 1px;
     }

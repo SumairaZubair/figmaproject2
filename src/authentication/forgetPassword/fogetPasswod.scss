@@ -1,27 +1,30 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+@mixin normal-style{
+    line-height: normal;
+    font-style: normal;
+}
+$main-color:#F37357;
 .signUpContentV{
     width: 100%;
-     background-color: #F37357;
+     background-color: $main-color;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
     padding-top: 3%;
     padding-bottom: 7%;
-    
 }
-
 .signUpFormV{
-   display: flex;
-   align-items: center;
-   justify-content:space-evenly;
-   flex-direction: column;
+@include flex;
 }
 .formDivV{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-height: 500px;
+    @include flex;
+    width: 550px;
+height: 550px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
@@ -38,9 +41,8 @@ box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
     color: #192E46;
 text-align: center;
 font-size: 24px;
-font-style: normal;
+@include normal-style;
 font-weight: 600;
-line-height: normal;
 margin: 20px;
 letter-spacing: -0.48px;
 }
@@ -68,7 +70,7 @@ line-height: 157.5%;
 letter-spacing: 0.14px;
 }
 .formV span{
-    color: #FB775A;
+    color: $main-color;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -80,16 +82,15 @@ letter-spacing: 0.14px;
 height: 46px;
 flex-shrink: 0;
 border-radius: 4px;
-background: #FB775A;
+background: $main-color;
 border: none;
 
 margin: 20px;
 margin-top: -2px;
 color: #FFF;
 font-size: 14px;
-font-style: normal;
+@include normal-style;
 font-weight: 600;
-line-height: normal;
 letter-spacing: 0.14px;
 }
 .confirmMsg{
@@ -97,34 +98,31 @@ letter-spacing: 0.14px;
     margin: 20px;
     border: 1px solid #FEAAAA;
 background: #FFE2E2;
-color: #FB5A5A ;
+color: $main-color ;
 margin-top: -2px;
 font-size: 9px;
-font-style: normal;
+@include normal-style;
 font-weight: 400;
-line-height: normal;
 letter-spacing: 0.18px;
 }
 .ask{
     color: #192E46;
 text-align: center;
-font-size: 14pxpx;
+font-size: 14px;
 margin: 50px;
-font-style: normal;
+@include normal-style;
 font-weight: 400;
-line-height: normal;
 letter-spacing: 0.14px;
 }
 .ask span{
-    color: #FB775A;
+    color: $main-color;
 font-size: 14px;
-font-style: normal;
+@include normal-style;
 font-weight: 600;
-line-height: normal;
 letter-spacing: 0.14px;
 }
 .forgetPara{
-    color: #FB775A !important;
+    color: $main-color !important;
 }
 .closeBtn{
     margin-right: 5px;
@@ -132,8 +130,8 @@ letter-spacing: 0.14px;
 .errorP{
     margin: 10px;
     margin-left: 20px;
-    color: #FB775A;
-    font-size: 10px;
+    color: $main-color;
+    font-size: 15px;
     text-align: start;
 }
 .custom-message{

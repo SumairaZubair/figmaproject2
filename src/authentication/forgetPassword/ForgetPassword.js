@@ -4,11 +4,9 @@ import * as Yup from 'yup';
 import { useState } from 'react'; 
 import { auth } from '../fFirebaseConfig';
 import { sendPasswordResetEmail } from 'firebase/auth';
-import '../forgetPassword/fogetPasswod.css';
+import '../forgetPassword/fogetPasswod.scss';
 import { message } from 'antd'
 import { useNavigate } from 'react-router-dom';
-// import 'antd/dist/antd.css';
-// import { Content } from 'antd/es/layout/layout';
 
 const ForgetPassword = () => {
 const navigate= useNavigate()
@@ -25,7 +23,7 @@ const navigate= useNavigate()
       await sendPasswordResetEmail(auth,values.email)
       message.success({
         content: 'Check your email.',
-        className: 'custom-message', // Apply the custom CSS class
+        className: 'custom-message', 
       });
 navigate('/login')
       // 

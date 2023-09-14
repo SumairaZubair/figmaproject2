@@ -1,5 +1,5 @@
 import React from 'react'
-import '../lastHomePage/lastHomePage.css'
+import '../lastHomePage/lastHomePage.scss'
 const LastHomePage = () => {
   return (
     <div>

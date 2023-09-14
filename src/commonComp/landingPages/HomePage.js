@@ -51,7 +51,7 @@
 import React, { useState } from 'react';
 import { Data } from '../Data';
 import Button from '../button/Button';
-import '../landingPages/homepage.css';
+import '../landingPages/homepage.scss';
 import '../landingPages/style.css';
 import LastHomePage from '../lastHomePage/LastHomePage';
 

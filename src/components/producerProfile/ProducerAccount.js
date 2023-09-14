@@ -1,81 +1,11 @@
-// import React from 'react'
-// // import '../..'
-// import { Card, Row, Col, Button } from 'antd';
-
-// // import ProducerNavbar from '../producerNavbar/ProducerNavbar'
-// import { EditOutlined } from '@ant-design/icons';
-// function ProducerAccount() {
-//     return (
-//         <div>
-//             {/* <ProducerNavbar/> */}
-//             <div className="ProducerProfile" style={{ padding: '40px', margin: "12px", background: "#4C68890D" }}>
-//                 <div className='producerProfileflex'>
-//                     <Row gutter={13}>
-//                         {/* Left wala bada card */}
-//                         {/* <Col span={5}> */}
-//                         <Col xs={24} sm={5} >
-//                             <Card title={<EditOutlined />} className=" pen"
-//                                 type="inner">
-//                                 <div className='profilecard'>
-//                                     {/* <img src={require('../ProducerAccountPic/Group209.png')}/> */}
-//                                     <h3>Jonathan Snow</h3>
-//                                     <p>jonathan.s45@gmail.com</p>
-//                                     <p>(319) 555-0115</p>
-//                                     <Button type='default'>CHANGE PASSWORD</Button>
-//                                 </div>
-//                             </Card>
-//                         </Col>
-
-//                         <Col xs={19} sm={16}>
-//                             <Card title={<div className='part' >
-//                                 <span className='active'>You have <span>2</span> active businesses</span>
-//                                 <Button type="primary" className=" btnpri">+ Add Business</Button>
-//                             </div>} className='rightcard'>
-
-//                                 <div className='cards2'>
-//                                     <Card type="inner" title={<div className="local">
-//                                         <span style={{ fontSize: "19px" }}>Upper Crust Pizza</span>
-//                                         <Button type="primary" className=" pri">➕</Button>
-//                                     </div>}>
-//                                         <div className='cardflex'><p>NAME</p><p>DOMAIN</p></div>
-//                                         <div className='cardflex tag'><p>Miami</p><p>../uppercrust/miami</p><Button type="primary" className="dashbtn">Dashboard</Button></div>
-//                                     </Card>
-//                                 </div>
-//                                 <div className='cards2'>
-//                                     <Card type="inner" title={<div style={{ display: 'flex', justifyContent: 'space-between', height: "60px", alignItems: 'center', fontWeight: "700" }}>
-//                                         <span style={{ fontSize: "19px" }}>Ideal Nutrition</span>
-//                                         <Button type="primary" className=" pri">➕</Button>
-//                                     </div>}>
-//                                         <div className='cardflex'><p>NAME</p><p>DOMAIN</p></div>
-//                                         <div className='cardflex tag'><p>Miami</p><p>../uppercrust/miami</p><Button type="primary" className="dashbtn">Dashboard</Button></div>
-//                                         <div className='cardflex tag'><p>Miami</p><p>../uppercrust/miami</p><Button type="primary" className="dashbtn">Dashboard</Button></div>
-//                                     </Card>
-//                                 </div>
-
-//                             </Card>
-//                         </Col>
-//                     </Row>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default ProducerAccount
-
-
-
 
 import {useState} from 'react';
 import { Card, Row, Col, Button, Modal } from 'antd';
 import { EditOutlined } from '@ant-design/icons';
 import { RightOutlined } from '@ant-design/icons'
-import '../../components/producerProfile/producerAcc.css'
+import '../../components/producerProfile/producerAcc.scss'
 import ProducerNavbar from './accountNavBar/ProducerNavbar';
 import { InfoCircleOutlined } from '@ant-design/icons'
-import { Form, Input} from 'antd';
-
-// import { useState } from 'react';
 function ProducerAccount() {
 const [formModal , setFormModal] = useState(false)
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -109,7 +39,6 @@ const [formModal , setFormModal] = useState(false)
     email: '',
   });
 
-  // Handle input changes and update state
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -118,7 +47,6 @@ const [formModal , setFormModal] = useState(false)
     });
   };
 
-  // Handle form submission
   const handlesSubmit = (e) => {
     e.preventDefault();
     if (closeMsgg) {
@@ -127,11 +55,7 @@ const [formModal , setFormModal] = useState(false)
       setMessage(`Lorem Ipsum is the standard filler text used in design throughout the world. It’s been the standards since the 1500’s and it’s time for an update..`);
   }
   setCloseMsgg(!closeMsgg)
-    
-    // Do something with the form data (e.g., submit to a server)
     console.log('Form Data:', formData);
-
-    // Clear form fields by resetting the state
     setFormData({
       fname: '',
       lname: '',
@@ -147,7 +71,6 @@ const [formModal , setFormModal] = useState(false)
       >
         <div className='producer-profile-flex'>
           <Row gutter={15}>
-            {/* Left Card */}
             <Col xs={25} sm={12} lg={8}>
               <Card
                 title={<EditOutlined className="pen-card" onClick={showFormModal} />}
@@ -164,7 +87,6 @@ const [formModal , setFormModal] = useState(false)
               </Card>
             </Col>
 
-            {/* Right Card */}
             <Col xs={24} sm={12} lg={16}>
               <Card
                 title={
@@ -175,7 +97,6 @@ const [formModal , setFormModal] = useState(false)
                 }
                 className='right-card'
               >
-                {/* Content Sections */}
                 <div className='cards-2'>
                   <Card
                     type="inner"
@@ -216,20 +137,6 @@ const [formModal , setFormModal] = useState(false)
                   </Card>
                 </div>
                 <div className='cards-2'>
-                  {/* <Card
-                    type="inner"
-                    title={
-                      <div style={{ display: 'flex', justifyContent: 'space-between', height: "60px", alignItems: 'center', fontWeight: "700" }}>
-                        <span style={{ fontSize: "19px" }}>Ideal Nutrition</span>
-                        <Button type="primary" className="plus">➕</Button>
-                      </div>
-                    }
-                  >
-                    <div className='card-flex'><p>NAME</p><p>DOMAIN</p></div>
-                    <div className='card-flex tag'><p>Miami</p><p>../uppercrust/miami</p><Button type="primary" className="dashboardBtn">Dashboard</Button></div>
-                    <div className='card-flex tag'><p>Miami</p><p>../uppercrust/miami</p><Button type="primary" className="dashboardBtn">Dashboard</Button></div>
-                  </Card> */}
-
 
 <Card
                     type="inner"
@@ -271,13 +178,6 @@ const [formModal , setFormModal] = useState(false)
 
                   <Card
                     type="inner"
-                    // title={
-                    //   <div className="local">
-                    //     <span style={{ fontSize: "19px" }}>Upper Crust Pizza</span>
-                    //     <Button type="primary" className="plus">+</Button>
-                    //   </div>
-
-                    // }
                     className='pizzaCard'
                   >
                      <div className='big-flex'>
@@ -316,12 +216,11 @@ const [formModal , setFormModal] = useState(false)
       </div>
       <Modal
        open={isModalVisible}
-        // onOk={handleOk}
         onCancel={handleCancel}
         footer={null}
-        className="full-page-modal" // Add a class for styling
-        centered // Center the modal vertically
-        bodyStyle={{ background: '#ffffffc'}} // Set the background color to white
+        className="full-page-modal" 
+        centered 
+        bodyStyle={{ background: '#ffffffc'}}
       >
     <div className='center-div'>
       <div className='modelh1'>

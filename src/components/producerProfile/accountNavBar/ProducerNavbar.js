@@ -1,4 +1,4 @@
-import '../../producerProfile/accountNavBar/producerNavbar.css'
+import '../../producerProfile/accountNavBar/producerNavbar.scss'
 import { Menu, Dropdown } from 'antd';
 import React from 'react';
 
@@ -22,10 +22,9 @@ const ProducerNavbar = () => {
                 <div className="producerNavText">
                     <p className='navbarText'>Sign In</p>
 
-                    <Dropdown overlay={menu} trigger={['click']}>
+                    <Dropdown open={menu} trigger={['click']}>
                         <img src={require('../../../Assest/avatar.png')} />
                     </Dropdown>
-                    {/* <img src={require('../../../Assest/avatar.png')}/> */}
                     <img src={require('../../../Assest/arrow.png')} />
                 </div>
             </div>

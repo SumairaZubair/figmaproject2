@@ -1,19 +1,21 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .producerNav{
     width: 99%;
     padding: 3px;
     background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  @include flex;
 }
 .proImg{
     width: 150px;
 }
 .producerNavText{
     width: 130px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+@include flex;
+justify-content: space-around;
 }
 .navbarText{
     color: #B6C5D6;

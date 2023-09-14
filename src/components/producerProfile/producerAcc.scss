@@ -1,13 +1,15 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .pen-card{
     margin-left: 95%;
-
 }
-.producer-profile-flex{
+.producer-profile-flex,
+.pen-card title
+{
     background-color: #f3f0f0;
- 
-}
-.pen-card title{
-    background-color: white
 }
 .right-card{
     width: 75%;
@@ -23,16 +25,13 @@
     background: white;
 }
 .local{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   @include flex;
     border: none;
     padding: 10px;
     margin: -5px;
 }
 .local span{
     color: #192E46;
-font-family: Poppins;
 font-size: 22px;
 font-style: normal;
 font-weight: 600;
@@ -60,12 +59,10 @@ width: 80%;
 .profile-card{
     margin-top: 20px;
     background-color: #ffffff;
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     flex-direction: column;
     color: #192E46;
-font-family: Poppins;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
@@ -74,7 +71,6 @@ line-height: normal;
 .profile-card p{
     color: #4C6889;
 text-align: center;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -85,7 +81,6 @@ padding: 4px;
      border-radius: 2px;
      color: #768CA5;
      margin-top: 20px;
-font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
@@ -103,7 +98,6 @@ letter-spacing: 0.7px;
 }
 .active{
     color: #192E46;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -112,7 +106,6 @@ letter-spacing: -0.18px;
 }
 .active-span{
     color: #FB775A;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -128,26 +121,19 @@ border-radius: 4px;
 background: #FB775A;
 }
 .main-card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between ;
+   @include flex;
     flex-direction: column;
 }
  .big-flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex;
     flex-direction: row;
  }
 .dashBtn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex;
     flex-direction: column;
 }
 .p{
 color: #768CA5;
-font-family: Poppins;
 font-size: 15px;
 padding-bottom: 3px;
 font-style: normal;
@@ -161,7 +147,6 @@ letter-spacing: 0.91px;
 }
 .pp{
     color: #192E46;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -176,7 +161,6 @@ flex-shrink: 0;
 border-radius: 4px;
 background: #192E46;
 color: #FFF;
-font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
@@ -203,8 +187,7 @@ letter-spacing: 0.14px;
     margin: 20px;
 }
 .profileDiv{
- display: flex;
- align-items: center;
+    @include flex;
  justify-content: center;
 }
 .profilePicture{
@@ -218,11 +201,10 @@ letter-spacing: 0.14px;
 }
 .need{
     color: #192E46;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
-line-height: 63px; /* 350% */
+line-height: 63px; 
 letter-spacing: 0.18px;
 }
 .profilePicture::before {
@@ -234,7 +216,7 @@ letter-spacing: 0.18px;
     height: 100%;
     background-color: rgba(17, 58, 102, 0.503); 
     border-radius: 60px;
-    z-index: 1; /* Place the overlay above the image */
+    z-index: 1; 
 }
 .pennIcon{
     position: absolute;
@@ -244,58 +226,41 @@ letter-spacing: 0.18px;
     font-size: 25px;
     z-index: 1;
 }
-
-
-
 /* MyForm.css */
-
-
-
 .my-form {
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     flex-direction: row;
-    /* border: 2px solid red; */
     width: 400px;
     margin: 0 auto;
     padding: 10px;
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
   }
-  
   .heading {
     font-size: 20px;
     font-weight: bold;
   }
-  
   .form-group {
     width: auto;
     margin-bottom: 10px;
   }
   .form-groups {
     display: flex;
-    
     flex-direction: column;
     margin-bottom: 10px;
   }
-  
   .input {
-    /* width: 180px; */
     width: 100%;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    /* color: #768CA5;s */
-
   }
   label{
-    font-family: Poppins;
-font-size: 13px;
+    font-size: 13px;
 font-style: normal;
 font-weight: 600;
-line-height: 200.5%; /* 46.995px */
+line-height: 200.5%; 
 letter-spacing: 0.91px;
 color: #768CA5;
   }
@@ -304,17 +269,15 @@ color: #768CA5;
     width: 350px;
 height: 40px;
 margin-top: 20px;
-/* margin-left: 6px; */
 border: none;
 flex-shrink: 0;
 border-radius: 4px;
 background: #FB775A;
 color: #FFF;
-font-family: Poppins;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
-line-height: 157.5%; /* 28.35px */
+line-height: 157.5%; 
 letter-spacing: 0.18px;
 
   }
@@ -322,35 +285,22 @@ letter-spacing: 0.18px;
     display: block;
   }
 .btn-div{
-    /* border: 2px solid red; */
     width: 350px;
     margin: 0 auto;
-    /* padding: 10px; */
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
 }
 .saveMsg{
     width: 350px;
-    /* margin: 5px; */
     margin-top: 10px;
     border: 1px solid #FEAAAA;
 background: #FFE2E2;
 color: #FB5A5A;
-font-family: Poppins;
-/* margin-top: -2px; */
 font-size: 13px;
-/* padding: 10px; */
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.18px;
 }
-
-
-
-/* YourModal.css */
-
-/* Style the full-page modal */
 .full-page-modal {
     width: 100% !important;
     height: 90% !important;
@@ -360,15 +310,12 @@ letter-spacing: 0.18px;
     padding: 0 !important;
   }
   
-  /* Style the modal content if needed */
   .full-page-modal .ant-modal-content {
-    border-radius: 0; /* Remove border radius */
-    box-shadow: none; /* Remove shadow */
-    height: 100%; /* Set height to 100% */
+    border-radius: 0;
+    box-shadow: none; 
+    height: 100%; 
   }
-  /* YourModal.css */
 
-/* Style the full-page modal */
 .full-page-modal {
   width: 90% !important;
   height: 95% !important;
@@ -380,33 +327,29 @@ letter-spacing: 0.18px;
 
 /* Style the modal content if needed */
 .full-page-modal .ant-modal-content {
-  border-radius: 0; /* Remove border radius */
-  box-shadow: none; /* Remove shadow */
-  height: 100%; /* Set height to 100% */
+  border-radius: 0; 
+  box-shadow: none; 
+  height: 100%; 
 }
 
-/* Style the modal title if needed */
 .full-page-modal .ant-modal-title {
-  background-color: #f0f2f5; /* Background color for the title */
-  padding: 16px; /* Adjust padding as needed */
+  background-color: #f0f2f5; 
+  padding: 16px; 
 }
 
-/* Style the modal footer if needed */
 .full-page-modal .ant-modal-footer {
-  display: none; /* Hide the footer */
+  display: none; 
 }
 .ant-modal .ant-modal-content{
     background-color: white;
 }
-  /* Style the modal title if needed */
   .full-page-modal .ant-modal-title {
-    background-color: #f0f2f5; /* Background color for the title */
-    padding: 16px; /* Adjust padding as needed */
+    background-color: #f0f2f5; 
+    padding: 16px; 
   }
   
-  /* Style the modal footer if needed */
   .full-page-modal .ant-modal-footer {
-    display: none; /* Hide the footer */
+    display: none; 
   }
   .ant-modal{
     top: 20px;
@@ -414,16 +357,13 @@ letter-spacing: 0.18px;
   .center-div{
   
     height: 90vh;
-    /* background-color: #4C6889; */
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
   }
   .modelh1{
     width: 600px;
     height: 200px;
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content:center ;
     border: 2px solid navy;
   }
@@ -440,14 +380,11 @@ letter-spacing: 0.18px;
     }
     .profile-card{
         padding: 10px;
-        /* background-color: rgb(248, 248, 251); */
-        display: flex;
-        align-items: center;
+        @include flex;
         justify-content: center;
         flex-direction: column;
         color: #192E46;
-    font-family: Poppins;
-    font-size: 20px;
+        font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -455,15 +392,13 @@ letter-spacing: 0.18px;
     .cards-2{
         width: 100%;
         padding: 1px;
-        /* border: 2px solid red; */
         background: #ffffff;
         margin-bottom: 20px;
     }
     .profile-card p{
         color: #4C6889;
     text-align: center;
-    font-family: Poppins;
-    font-size: 12px;
+        font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -473,8 +408,7 @@ letter-spacing: 0.18px;
     font-size: 12px;
 }
 .part{
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
@@ -488,9 +422,7 @@ border-radius: 4px;
 background: #FB775A;
 }
 .local{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex;
     padding:10px;
 }
 .right-card{
@@ -498,25 +430,17 @@ background: #FB775A;
     margin-top: 20px;
     margin-bottom: 20px;
     background: transparent;
-    /* border: 2px solid blue; */
     padding: 1px;
     padding-bottom: 20px;
-
 }
 .main-card{
     width: 50%;
-    display: block;
-    
+    display: block;  
 }
- 
 .dashBtn{
     display: block;
-    
 }
 .big-flex{
-    /* width:100%;S */
-    /* background-color: #4C6889; */
-    /* display: flex; */
     align-items: center;
     display: block;
     justify-content: first baseline;
@@ -549,15 +473,11 @@ background: #FB775A;
     width: 100%;
 }
 .my-form {
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: flex-start;
     flex-direction: column;
-    /* border: 2px solid red; */
-    width: 100%;
+        width: 100%;
     margin: 0 auto;
-    /* padding: 10px; */
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
   }
   .form-groups {
@@ -569,22 +489,20 @@ background: #FB775A;
   
 
   .button {
-    width: 100%; /* Make the buttons full width on smaller screens */
+    width: 100%; 
     margin-top: 10px;
     align-items: center;
     justify-content: center; 
-    padding-top: 5px;/* Adjust the margin as needed */
+    padding-top: 5px;
   }
   .btn-div{
-    /* border: 2px solid red; */
     width: 100%;
     margin: 0 auto;
-    /* padding: 10px; */
-    /* border: 1px solid #ccc; */
+
     border-radius: 5px;
 }
 .form-row {
-    flex-direction: column; /* Stack inputs vertically on small screens */
+    flex-direction: column; 
 }
 .saveMsg{
     width: 100%;

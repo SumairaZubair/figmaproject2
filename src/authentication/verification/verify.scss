@@ -1,6 +1,18 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+@mixin linestyle{
+    line-height: normal;
+    font-style: normal;
+    font-weight: 400;
+letter-spacing: 0.14px;
+font-size: 14px;
+}
 .signUpContentV{
     width: 100%;
-    /* height: 100vh; */
      background-color: #F37357;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
@@ -10,16 +22,10 @@
 }
 
 .signUpFormV{
-   display: flex;
-   align-items: center;
-   justify-content:space-evenly;
-   flex-direction: column;
+  @include flex;
 }
 .formDivV{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     width: 600px;
 height: 500px;
 flex-shrink: 0;
@@ -39,42 +45,19 @@ box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
     color: #192E46;
 text-align: center;
 font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+@include linestyle;
 margin: 20px;
 letter-spacing: -0.48px;
-}
-.emailVv{
-    width: 400px;
-    margin: 20px;
- 
-    margin-top: 10px;
-    padding-left: 10px;
-height: 46px;
-flex-shrink: 0;
-border-radius: 4px;
-border: 1px solid #92908f;
-background: #FFF;
-text-align:start;
-font-size: 14px;
 }
 .formV p{
     color: #192E46;
 text-align: center;
 font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 157.5%; /* 22.05px */
-letter-spacing: 0.14px;
+@include linestyle;
 }
 .formV span{
     color: #FB775A;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 157.5%;
-letter-spacing: 0.14px;
+   @include linestyle;
 }
 .verifyBtn{
     width: 420px;
@@ -88,11 +71,7 @@ border: none;
 margin: 20px;
 margin-top: -2px;
 color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.14px;
+@include linestyle;
 }
 .confirmMsg{
     width: 420px;
@@ -102,36 +81,24 @@ background: #FFE2E2;
 color: #FB5A5A;
 margin-top: -2px;
 font-size: 9px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.18px;
+@include linestyle;
 }
 .ask{
     color: #192E46;
 text-align: center;
-font-size: 14pxpx;
 margin: 50px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.14px;
+@include linestyle;
 }
 .ask span{
     color: #FB775A;
-font-size: 14px;
-
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.14px;
+@include linestyle;
 }
 .signLogoV{
     width: 200px;
     margin-bottom: 10px;
 }
 .errorV{
-    font-size: 10px;
+    font-size: 15px;
     color: red;
     margin: 20px;
 }
