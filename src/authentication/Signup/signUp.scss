@@ -3,7 +3,7 @@
     margin: 4px;
     margin-top: 20px;
     padding-left: 10px;
-height: 46px;
+height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
 border: 1px solid #E0E4E9;
@@ -18,7 +18,7 @@ font-size: 14px;
 }
 @mixin signIn-signUp-btn{
     width: 223px;
-    height: 50px;
+    height: 45px;
     flex-shrink: 0;
     border: 1px solid #D4D7DD;
     background: #FAFAFA;
@@ -36,8 +36,8 @@ font-size: 14px;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    // padding-top: 3%;
+    // padding-bottom: 3%;
 }
 .flex-div{
     @include flex;
@@ -51,15 +51,15 @@ font-size: 14px;
 .formDiv{
   @include flex;
     flex-direction: column;
-    width: 530px;
-height: 630px;
+    width: 520px;
+height: 570px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .form{
     width: 450px;
-height: 550px;
+height: 500px;
 flex-shrink: 0;
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
@@ -115,10 +115,10 @@ margin-top: 20px;
 @include sign-inputs;
 }
 .signbutton{
-    width: 367px;
+    width: 380px;
     margin: 4px;
     margin-top: 20px;
-height: 46px;
+height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #FB775A;
@@ -130,6 +130,7 @@ font-size: 14px;
     color: #192E46;
 font-size: 14px;
 margin: 4px;
+text-align: center;
 font-style: normal;
 font-weight: 400;
 line-height: 157.5%; 
@@ -177,6 +178,9 @@ background: #E0E4E9;
     .form {
         width: 90%; 
         height: auto; 
+    }
+    .feild{
+        margin-left: 15px;
     }
 .signLogo{
     width: 40%;

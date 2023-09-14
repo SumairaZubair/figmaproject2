@@ -120,11 +120,7 @@ const SignUp = () => {
                   By continuing, I agree to Cottage’s{' '}
                   <span onClick={showModal}>Terms & Conditions.</span>
                 </p>
-                <div className="connect">
-                  <p className="line"></p>
-                  <p>Or Connect With</p>
-                  <p className="line"></p>
-                </div>
+              
               </div>
             </div>
           </div>

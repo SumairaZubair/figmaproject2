@@ -58,6 +58,7 @@ const Login = () => {
                         className='addresss'
                         name='email'
                         placeholder='Email'
+                        onFocus={(e) => e.target.style.borderColor = 'orange'}
                       />
                       <ErrorMessage name='email' component='div' className='error' />
                     </div>
@@ -67,6 +68,7 @@ const Login = () => {
                         className='passwordd'
                         name='password'
                         placeholder='Password'
+                        onFocus={(e) => e.target.style.borderColor = 'orange'}
                       />
                       <ErrorMessage name='password' component='div' className='error' />
                     </div>
@@ -78,15 +80,7 @@ const Login = () => {
                 <p className='forgot' onClick={() => navigate('/forget')}>
                   Forgot Password
                 </p>
-                <div className='connected'>
-                  <p className='linee'></p>
-                  <p>Or Connect With</p>
-                  <p className='linee'></p>
-                </div>
-                {/* <div className='fb-tweeter'>
-                  <button className='facebookk'>Facebook</button>
-                  <button className='twittter'>Twitter</button>
-                </div> */}
+              
               </div>
             </div>
           </div>
