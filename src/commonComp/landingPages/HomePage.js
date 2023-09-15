@@ -73,10 +73,10 @@ const HomePage = () => {
                 <p className="menuPara">{section.description}</p>
                 <div className="buttonstyle">
                   {section.button ? (
-                    <Button bgclr="#F37357" textColor={'white'} border={'#F37357'} btnText={section.button} />
+                    <Button text={'Get Started'} className={'get-started'} />
                   ) : null}
                   {section.button2 ? (
-                    <Button bgclr="white" border={''} textColor={'#192E46'} btnText={section.button2} />
+                    <Button text={'Learn More'} className={'more'} />
                   ) : null}
                 </div>
               </div>

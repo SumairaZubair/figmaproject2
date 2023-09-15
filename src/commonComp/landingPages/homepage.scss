@@ -96,7 +96,20 @@ font-style: normal;
 font-weight: 600;
 line-height: 29px;
 }
-
+.get-started{
+    background-color: $main-color;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+}
+.more{
+    background-color: white;
+    border: 1px solid #192E46;
+    color: #192E46;
+    font-size: 17px;
+    font-weight: 600;
+}
 @media (max-width: 768px) {
    
     .menu{
