@@ -58,7 +58,6 @@ const Login = () => {
                         className='addresss'
                         name='email'
                         placeholder='Email'
-                        onFocus={(e) => e.target.style.borderColor = 'orange'}
                       />
                       <ErrorMessage name='email' component='div' className='error' />
                     </div>
@@ -68,7 +67,6 @@ const Login = () => {
                         className='passwordd'
                         name='password'
                         placeholder='Password'
-                        onFocus={(e) => e.target.style.borderColor = 'orange'}
                       />
                       <ErrorMessage name='password' component='div' className='error' />
                     </div>

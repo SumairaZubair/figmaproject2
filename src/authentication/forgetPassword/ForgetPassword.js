@@ -9,6 +9,7 @@ import { message } from 'antd'
 import { useNavigate } from 'react-router-dom';
 
 const ForgetPassword = () => {
+  const [close, setClose] = useState(false);
 const navigate= useNavigate()
   const initialValues = {
     email: '',
@@ -50,9 +51,11 @@ navigate('/login')
     validationSchema,
     onSubmit,
   });
+  const toggleInstruction = () => {
+    setInstruction(!instruction);
+  };
 
-  const [instruction, setInstruction] = useState('');
-  const [close, setClose] = useState(false);
+  const [instruction, setInstruction] = useState(false);
 
   return (
     <div>
@@ -77,10 +80,15 @@ navigate('/login')
                   Send 
                 </button>
               </form>
-              <p className='confirmMsg'>{instruction}</p>
-              <p className='forgetPara'>Sign In</p>
-              <p className='forgetPara'>Create Account</p>
-              <p className='forgetPara'>Didn’t receive unlock instruction?</p>
+              {instruction && (
+        <p className='confirmMsg'>       
+         'If your email address is exists in our database, you will receive a password recovery link at your email address in a few minutes'
+        </p>
+          )}
+        
+              <p className='forgetPara' onClick={()=>{navigate('/login')}}>Sign In</p>
+              <p className='forgetPara' onClick={()=>{navigate('/signUp')}}>Create Account</p>
+              <p className='forgetPara' onClick={toggleInstruction} >Didn’t receive unlock instruction?</p>
             </div>
           </div>
         </div>

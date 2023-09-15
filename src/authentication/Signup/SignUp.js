@@ -13,6 +13,8 @@ const SignUp = () => {
   const Navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+ 
+
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -90,8 +92,10 @@ const SignUp = () => {
     placeholder="Last Name"
   />
 </div>
-  <ErrorMessage name="firstName" component="div" className="error" />
+<div className='error-flex'>
+<ErrorMessage name="firstName" component="div" className="error" />
   <ErrorMessage name="lastName" component="div" className="error" />
+</div>
                     <Field className="email" type="email" name="email" placeholder="Email" />
                     <ErrorMessage name="email" component="div" className="error" />
 
