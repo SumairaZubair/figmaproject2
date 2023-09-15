@@ -134,6 +134,11 @@ letter-spacing: 0.14px;
     color: $main-color !important;
     cursor: pointer;
 }
+.signLogoV{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 .closeBtn{
     margin-right: 5px;
 }
@@ -186,7 +191,7 @@ height: auto;
         margin: 10px;
     }
     .verifyBtn{
-        width: 92%;
+        width: 95%;
         margin-top: 10px;
     }
 }
