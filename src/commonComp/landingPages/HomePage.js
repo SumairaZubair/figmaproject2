@@ -76,7 +76,7 @@ const HomePage = () => {
                     <Button bgclr="#F37357" textColor={'white'} border={'#F37357'} btnText={section.button} />
                   ) : null}
                   {section.button2 ? (
-                    <Button bgclr="white" border={''} btnText={section.button2} />
+                    <Button bgclr="white" border={''} textColor={'#192E46'} btnText={section.button2} />
                   ) : null}
                 </div>
               </div>

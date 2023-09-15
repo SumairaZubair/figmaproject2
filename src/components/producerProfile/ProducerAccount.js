@@ -77,7 +77,7 @@ const [formModal , setFormModal] = useState(false)
                 className="side-card"
                 type="inner"
               >
-                <img className='man' src={require('../../Assest/man.png')} />
+                <img className='man' src={require('../../Assest/man.png')} alt='manImg' />
                 <div className='profile-card'>
                   <h3>Jonathan Snow</h3>
                   <p>jonathan.s45@gmail.com</p>

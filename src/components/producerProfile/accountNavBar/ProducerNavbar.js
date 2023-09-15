@@ -17,15 +17,15 @@ const ProducerNavbar = () => {
         <div>
             <div className="producerNav">
                 <div className="producerNavImg">
-                    <img className='proImg' src={require('../../../Assest/LOGO.png')} />
+                    <img className='proImg' src={require('../../../Assest/LOGO.png')} alt='accountimg' />
                 </div>
                 <div className="producerNavText">
                     <p className='navbarText'>Sign In</p>
 
                     <Dropdown open={menu} trigger={['click']}>
-                        <img src={require('../../../Assest/avatar.png')} />
+                        <img src={require('../../../Assest/avatar.png')} alt='avatar' />
                     </Dropdown>
-                    <img src={require('../../../Assest/arrow.png')} />
+                    <img src={require('../../../Assest/arrow.png')} alt='arrow' />
                 </div>
             </div>
 
