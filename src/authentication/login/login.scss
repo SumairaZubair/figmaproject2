@@ -22,6 +22,7 @@ height: 40px;
 $main-color:#FB775A;
 .signUpContentt{
     width: 100%;
+    height: 100vh;
      background-color:$main-color;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
@@ -169,6 +170,7 @@ cursor: pointer;
     .signUpContentt {
         padding-top: 5%;
         padding-bottom: 3%;
+        height: auto;
     }
 
     .form-Div,
