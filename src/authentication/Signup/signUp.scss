@@ -38,7 +38,7 @@ font-size: 14px;
     background-size: cover;
     background-position: center;
     // padding-top: 3%;
-    padding-bottom: 1%;
+    // padding-bottom: 1%;
 }
 .flex-div{
     width: 370px;
@@ -55,15 +55,20 @@ font-size: 14px;
 .formDiv{
   @include flex;
     flex-direction: column;
-    width: 520px;
-height: 570px;
+    width: 510px;
+// height: 570px;
+height: auto;
+padding-top: 30px;
+padding-bottom: 30px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .form{
     width: 450px;
-height: 520px;
+// height: 520px;
+height: auto;
+margin-bottom: -10px;
 flex-shrink: 0;
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
@@ -84,7 +89,7 @@ box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 .name{
     width: 169.5px;
     margin: 4px;
-height: 46px;
+height: 40px;
 flex-shrink: 0;
 border-radius: 4px;
 border: 1px solid #E0E4E9;
@@ -137,7 +142,7 @@ margin-top: 10px;
 .signbutton{
     width: 380px;
     margin: 4px;
-    margin-top: 20px;
+    margin-top: 10px;
 height: 40px;
 flex-shrink: 0;
 border-radius: 4px;

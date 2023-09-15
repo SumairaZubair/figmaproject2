@@ -18,8 +18,9 @@ font-size: 14px;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 2%;
-    padding-bottom: 1%;
+    // padding-top: 20px
+    // padding-top: 2%;
+    // padding-bottom: 1%;
 }
 
 .signUpFormV{
@@ -28,14 +29,14 @@ font-size: 14px;
 .formDivV{
     @include flex;
     width: 600px;
-height: 500px;
+height: 580px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .formV{
 width: 460px;
-height: 450px;
+height: 440px;
 flex-shrink: 0;
 /* backgro    und-color: #D4D7DD; */
 border: 1px solid #D4D7DD;
@@ -96,6 +97,7 @@ margin: 50px;
 }
 .signLogoV{
     width: 200px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .errorV{

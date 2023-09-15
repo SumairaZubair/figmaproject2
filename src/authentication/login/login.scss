@@ -27,8 +27,8 @@ $main-color:#FB775A;
     background-image: url('../../Assest/signupBg.png');
     background-size: cover;
     background-position: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    // padding-top: 3%;
+    // padding-bottom: 3%;
 }
 .error{
     color: red;
@@ -41,15 +41,20 @@ $main-color:#FB775A;
 }
 .form-Div{
     @include flex;
-    width: 550px;
-height: 500px;
+    width: 500px;
+// height: 500px;
+height: auto;
+// padding: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
 flex-shrink: 0;
 background: #fff;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
 }
 .formm{
     width: 440px;
-height: 400px;
+// height: 400px;
+height: auto;
 flex-shrink: 0;
 border: 1px solid #D4D7DD;
 box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
@@ -102,6 +107,7 @@ letter-spacing: -0.36px;
 .signLogoo{
     width: 200px;
     margin-bottom:10px ;
+    margin-top: 20px
 }
 .passwordd{
     @include  input-wd-he;
@@ -172,7 +178,6 @@ cursor: pointer;
         padding-bottom: 3%;
         height: auto;
     }
-
     .form-Div,
     .formm {
         width: 90%; 
