@@ -12,10 +12,10 @@ const LastHomePage = () => {
             </div>
             <button className='trackBtn'>GET STARTED</button>
             <div className='trackImg'>
-                {/* <img className='trackImg' src={require('../../Assest/trackimg.png')} alt='track'/> */}
+                <img className='trackImg' src={require('../Assest/trackimg.png')} alt='track'/>
             </div>
-            <div className='trackimg'>
-
+            <div className='trackimg1'>
+                <img className='trackimg1' src={require('../Assest/homepage_6_mob.png')}/>
             </div>
         </div>
     </div>
